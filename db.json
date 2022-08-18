@@ -1,0 +1,68 @@
+{
+  "buildSandwich": 
+    {
+      "Breads": [
+        "Toasted Wonder Bread",
+        "Martin's Potato Roll",
+        "Italian Hoagie",
+        "French Baguette",
+        "Steamed Bao Bun",
+        "Yorkshire Pudding"
+      ],
+      "Meats": [
+        "Griddled Spicy Beef Shavings",
+        "Nathan's Hot Dog",
+        "Chicken Nuggets",
+        "Italian Cold Cut Surprise",
+        "BBQ Smoked Pork",
+        "Garlic Fried Shrimp",
+        "*Impossible Spicy Meat Sauce*", 
+        "Add Fried Egg + $2"
+        
+      ],
+      "Cheeses": [
+        "Cheeze Whiz",
+        "Murican Twofer",
+        "Pimento",
+        "Vermont Cheddar",
+        "Herb Havarti",
+        "Quatro Italiano"
+      ],
+    
+      "Toppings": [
+        "Crinkle Cut Fries",
+        "Tater Tots",
+        "Crushed BBQ Chips",
+        "Macaroni Salad",
+        "Honey Bacon Baked Beans",
+        "Onion Rings"
+      ],
+    
+      "Sauces": [ 
+        "Classic - KMM",
+        "Sriracha Ketchup",
+        "Chipotle Mayo",
+        "Nashville Hot Honey Mustard",
+        "Two Thousand Island",
+        "Garbage Secret Sauce"
+      ],
+    
+      "Veggies": [
+        "LTO",
+        "Cole Slaw",
+        "Pitted Olives",
+        "Sweet and Sour Kimchi",
+        "Diced Gherkins",
+        "Sauteed Mushrooms"
+      ],
+    
+      "Gulps": [
+        "Jarritos Sodas",
+        "PRB Pounder",
+        "Natty Light Pounder",
+        "House Wine - White, Red, Rose",
+        "Prosecco",
+        "Double Shot of Old Crow"
+      ]
+  }
+}

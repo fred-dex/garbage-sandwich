@@ -2,37 +2,120 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f6f4ef
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  border-style: dotted;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  border-style: dotted;
+  margin: center
+
+}
+
+.images img {
+  max-width: 50%;
+  height: auto;
+  justify-content: space-evenly;
+  padding-bottom:50px;
+  cursor: pointer;
+  color:black
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+header {
+  display:flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e7e226;
+  border-style:ridge;
+  border-width: 20px;
+  border-color: #F7591f;
+  color: #F7591f;
+  padding: 0%;
+  font-family: 'Amatic SC', cursive;
+}
+
+header div {
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap:2%;
 }
 
-.App-link {
-  color: #61dafb;
+header img {
+  display: center;
+  width:50%;
+  height:auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header input[type=text] {
+  width: 50%;
+  height:3em;
+  font-size: 1.25em;
+  background: none;
+  border:1px solid #eeeeff;
+  border-radius: 4px;
+  color:#eeeeff;
+  margin-top:1%;
+  padding:.5rem;
+}
+
+header h1 {
+  font-size: 4.0rem;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+footer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7e226;
+  border-style:ridge;
+  border-width: 20px;
+  border-color: #F7591f;
+  color: #F7591f;
+  padding: 1%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myVideo {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  top: calc(100 + .25rem);
+  background-color: #f6f4ef;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 #e7e226(.1); ;
+}
+
+.dropdown-menu-active {
+  opacity: .1;
 }
