@@ -1,8 +1,53 @@
 {
+  "sandwiches": [
+    {
+        "Name":"",
+        "Meat":"",
+        "Bread":"",
+        "Cheese":"",
+        "Topping":"",
+        "Sauce":"",
+        "Veggies":"",
+        "Gulp":""       
+    },
+    {
+        "Name":"",
+        "Meat":"",
+        "Bread":"",
+        "Cheese":"",
+        "Topping":"",
+        "Sauce":"",
+        "Veggies":"",
+        "Gulp":""      
+    },
+    {
+        "Name":"",
+        "Meat":"",
+        "Bread":"",
+        "Cheese":"",
+        "Topping":"",
+        "Sauce":"",
+        "Veggies":"",
+        "Gulp":""      
+    },
+    {
+        "Name":"",
+        "Meat":"",
+        "Bread":"",
+        "Cheese":"",
+        "Topping":"",
+        "Sauce":"",
+        "Veggies":"",
+        "Gulp":""      
+    }
+    ],
   "buildSandwich": 
     {
       "Breads": [
-        "Toasted Wonder Bread",
+        {
+          "Name":"Toasted Wonder Bread",
+          "Image":""  
+        },
         "Martin's Potato Roll",
         "Italian Hoagie",
         "French Baguette",

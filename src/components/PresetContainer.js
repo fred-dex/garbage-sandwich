@@ -4,7 +4,7 @@ import MenuItem from './MenuItem'
 export default function PresetContainer({onAddToOrder}) {
     const [sandwiches, setSandwiches] = useState([])
     function onLoad(){
-        fetch ('http://localhost:4000/Sandwiches')
+        fetch ('http://localhost:4000/sandwiches')
         .then (res=>res.json())
         .then (data=>setSandwiches(data))
     }
