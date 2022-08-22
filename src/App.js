@@ -14,9 +14,12 @@ function App() {
     setCurrentOrders([...currentOrders, sandwich]);
   }
   function onPlaceOrder(orderArray){
+    const newOrders = []
     for (let i=0; i<orderArray.length; i++){
-      setOrderHistory([...orderHistory, orderArray[i]])
+      newOrders.push(orderArray[i])
     }
+    setOrderHistory([...orderHistory, ...newOrders])
+    setCurrentOrders([])
   }
   return (
     <div className="App">
