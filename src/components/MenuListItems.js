@@ -9,7 +9,7 @@ import React, { useState } from 'react';
         console.log(isClicked)
     
     return (
-        <body>
+        <div>
         <div className="images">
     <div className='Bread'> 
         <i className="fa-solid fa-caret-down"></i>
@@ -82,7 +82,7 @@ import React, { useState } from 'react';
         </div>
     </div>
 </div>
-</body>
+</div>
  )
 }
 export default MenuListItems;
