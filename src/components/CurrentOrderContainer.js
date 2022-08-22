@@ -4,6 +4,7 @@ import OrderItem from './OrderItem'
 export default function CurrentOrderContainer({currentOrders, onPlaceOrder}) {
     function handlePlaceOrder(){
         onPlaceOrder(currentOrders)
+        alert("Your order has been placed! 😍🥪😍🥪")
     }
   return (
     <div>
