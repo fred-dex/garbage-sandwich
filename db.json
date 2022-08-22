@@ -1,54 +1,74 @@
 {
   "sandwiches": [
     {
-        "Name":"",
-        "Meat":"",
-        "Bread":"",
-        "Cheese":"",
-        "Topping":"",
-        "Sauce":"",
-        "Veggies":"",
-        "Gulp":""       
+        "Name":"Oscar Pounder",
+        "Bread":"Martin's Potato Roll",
+        "Meats":"Griddled Spicy Beef Shaving & BBQ Smoked Maple Pork Belly",
+        "Cheese":"New York Cheddar",
+        "Topping":"Waffle Fries",
+        "Sauce":"Garbage Secret Sauce",
+        "Veggies":"LTO",
+        "Gulp":"Dank IPA Draft"       
     },
     {
-        "Name":"",
-        "Meat":"",
-        "Bread":"",
-        "Cheese":"",
-        "Topping":"",
-        "Sauce":"",
-        "Veggies":"",
-        "Gulp":""      
+        "Name":"Great White Heap",
+        "Bread":"Toasted White Wonder Bread",
+        "Meats":"Griddled Spicy Beef Shavings, Nathan's Hot Dog",
+        "Cheese":"Murican Twofer",
+        "Topping":"Smashed Doritos",
+        "Sauce":"Garbage Secret Sauce",
+        "Veggies":"Cole Slaw",
+        "Gulp":"PRB Pounder"      
     },
     {
-        "Name":"",
-        "Meat":"",
-        "Bread":"",
-        "Cheese":"",
-        "Topping":"",
-        "Sauce":"",
-        "Veggies":"",
-        "Gulp":""      
+        "Name":"Pork Pie Pile Up",
+        "Bread":"Italian Hoagie",
+        "Meats":"BBQ Smoked Maple Pork Belly , Nathan's Hot Dog",
+        "Cheese":"Pimento",
+        "Topping":"Honey Bacon Baked Beans",
+        "Sauce":"Nashville Hot Honey Mustard",
+        "Veggies":"Pickle Power",
+        "Gulp":"Double Shot of Old Crow"      
     },
     {
-        "Name":"",
-        "Meat":"",
-        "Bread":"",
-        "Cheese":"",
-        "Topping":"",
-        "Sauce":"",
-        "Veggies":"",
-        "Gulp":""      
+        "Name":"The Junk Show",
+        "Bread":"Yorkshire Pudding",
+        "Meats":"Griddled Spicy Beef Shaving & Chicken Nuggets",
+        "Cheese":"heeze Whiz",
+        "Topping":"Honey Bacon Baked Beans",
+        "Sauce":"Garbage Secret Sauce",
+        "Veggies":"Caremelized Mushrooms",
+        "Gulp":"PRB Pounder"      
+    },
+    {
+        "Name":"The Large Marge",
+        "Bread":"Italian Hoagie",
+        "Meat":"Italian Cold Cut Surprise",
+        "Cheese":"Quatro Italiano",
+        "Topping":"Macaroni Salad",
+        "Sauce":"Two Thousand Island",
+        "Veggies":"Olive Tapenade",
+        "Gulp":"Prosecco"      
+    },
+    {
+        "Name":"Reduce, Reuse, Recycle",
+        "Bread":"French Baguette",
+        "Meat":"Impossible Spicy Meat Sauce",
+        "Cheese":"Herb Havarti",
+        "Topping":"Waffle Fries",
+        "Sauce":"Classic - KMM",
+        "Veggies":"LTO",
+        "Gulp":"Diet Coke"      
     }
     ],
-    "orderHistory":
-    [],
+
+
   "buildSandwich": 
     {
       "Breads": [
         {
-          "Name":"Toasted Wonder Bread",
-          "Image":""  
+          "Name":"Toasted White Wonder Bread",
+          "Image":"https://i.imgur.com/2L6WTEx.png"  
         },
         "Martin's Potato Roll",
         "Italian Hoagie",
@@ -71,7 +91,7 @@
         "Cheeze Whiz",
         "Murican Twofer",
         "Pimento",
-        "Vermont Cheddar",
+        "New York Cheddar",
         "Herb Havarti",
         "Quatro Italiano"
       ],
