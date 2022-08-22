@@ -14,7 +14,7 @@
         "Nathan's Hot Dog",
         "Chicken Nuggets",
         "Italian Cold Cut Surprise",
-        "BBQ Smoked Pork",
+        "BBQ Smoked Maple Pork Belly",
         "Garlic Fried Shrimp",
         "*Impossible Spicy Meat Sauce*", 
         "Add Fried Egg + $2"
@@ -30,9 +30,9 @@
       ],
     
       "Toppings": [
-        "Crinkle Cut Fries",
+        "Waffle Fries",
         "Tater Tots",
-        "Crushed BBQ Chips",
+        "Smashed Doritos",
         "Macaroni Salad",
         "Honey Bacon Baked Beans",
         "Onion Rings"
@@ -50,16 +50,17 @@
       "Veggies": [
         "LTO",
         "Cole Slaw",
-        "Pitted Olives",
+        "Olive Tapenade",
         "Sweet and Sour Kimchi",
-        "Diced Gherkins",
-        "Sauteed Mushrooms"
+        "Pickle Power",
+        "Caremelized Mushrooms"
       ],
     
       "Gulps": [
         "Jarritos Sodas",
+        "Coke & Diet Coke",
         "PRB Pounder",
-        "Natty Light Pounder",
+        "Dank IPA Draft",
         "House Wine - White, Red, Rose",
         "Prosecco",
         "Double Shot of Old Crow"
