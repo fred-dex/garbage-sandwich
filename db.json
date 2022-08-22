@@ -43,7 +43,7 @@
     {
         "Name":"The Large Marge",
         "Bread":"Italian Hoagie",
-        "Meat":"Italian Cold Cut Surprise",
+        "Meats":"Italian Cold Cut Surprise",
         "Cheese":"Quatro Italiano",
         "Topping":"Macaroni Salad",
         "Sauce":"Two Thousand Island",
@@ -53,7 +53,7 @@
     {
         "Name":"Reduce, Reuse, Recycle",
         "Bread":"French Baguette",
-        "Meat":"Impossible Spicy Meat Sauce",
+        "Meats":"Impossible Spicy Meat Sauce",
         "Cheese":"Herb Havarti",
         "Topping":"Waffle Fries",
         "Sauce":"Classic - KMM",
