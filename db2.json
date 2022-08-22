@@ -1,10 +1,44 @@
 {
-    "buildSandwich": {
-        "Bread": [
-            
-        ],
-        "Meat": [
-
-        ]
+    "Sandwiches": [
+    {
+        "Name":"",
+        "Meat":"",
+        "Bread":"",
+        "Cheese":"",
+        "Topping":"",
+        "Sauce":"",
+        "Veggies":"",
+        "Gulp":""       
+    },
+    {
+        "Name":"",
+        "Meat":"",
+        "Bread":"",
+        "Cheese":"",
+        "Topping":"",
+        "Sauce":"",
+        "Veggies":"",
+        "Gulp":""      
+    },
+    {
+        "Name":"",
+        "Meat":"",
+        "Bread":"",
+        "Cheese":"",
+        "Topping":"",
+        "Sauce":"",
+        "Veggies":"",
+        "Gulp":""      
+    },
+    {
+        "Name":"",
+        "Meat":"",
+        "Bread":"",
+        "Cheese":"",
+        "Topping":"",
+        "Sauce":"",
+        "Veggies":"",
+        "Gulp":""      
     }
+    ]
 }
