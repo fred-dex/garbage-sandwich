@@ -5,19 +5,19 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import PresetContainer from './components/PresetContainer'
 import CurrentOrderContainer from './components/CurrentOrderContainer';
+import OrderHistoryContainer from './components/OrderHistoryContainer';
 
 function App() {
-  const [currentOrders, SetCurrentOrders] = useState([])
+  const [currentOrders, setCurrentOrders] = useState([])
   const [orderHistory, setOrderHistory] = useState([])
   function onAddToOrder(sandwich){
-    SetCurrentOrders(currentOrders=>currentOrders.push(sandwich))
+    setCurrentOrders([...currentOrders, sandwich]);
   }
   function onPlaceOrder(orderArray){
     for (let i=0; i<orderArray.length; i++){
-      setOrderHistory(orderHistory=>orderHistory.push(orderArray[i]))
+      setOrderHistory([...orderHistory, orderArray[i]])
     }
   }
-
   return (
     <div className="App">
       <Header/>
@@ -26,6 +26,7 @@ function App() {
       <PresetContainer onAddToOrder = {onAddToOrder}/>
       {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
       {/* <Menu /> */}
+      <OrderHistoryContainer orderHistory = {orderHistory} />
       </div>
       <Footer/>
     </div>
