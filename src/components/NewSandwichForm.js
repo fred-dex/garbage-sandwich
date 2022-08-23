@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import Option from "./Option"
-
+import "../styles/NewSandwich.css"
 
 export default function NewSandwichForm() {
     const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:{Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}}
     const [ingredients, setIngredients] = useState({Breads:[], Meats:[], Cheeses:[], Veggies:[], Toppings:[], Sauces:[], Gulps:[]})
     const [newSandwich, setNewSandwich] = useState(initialState)
-    const [sandwichImage, setSandwichImage] = useState(newSandwich.Image)
+    const [sandwichImage, setSandwichImage] = useState({Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""})
 
     function handleLoad(){
         fetch('http://localhost:4000/ingredients')
@@ -16,11 +16,14 @@ export default function NewSandwichForm() {
     useEffect(handleLoad, [])
 
     function handleChange(e){
-        let {name, value, image} = e.target
+        let {name, value } = e.target
         setNewSandwich({...newSandwich, [name]:value})
-        setSandwichImage({...sandwichImage, [name]:image})
+        console.log(name);
+        setSandwichImage({
+            ...sandwichImage,
+            [name]:ingredients[name].Image
+        })
     }
-    console.log(ingredients)
   return (
     <div>
         <h2>Build Your Own Sandwich</h2>
@@ -62,14 +65,14 @@ export default function NewSandwichForm() {
                 {ingredients.Gulps.map(ingredient=><Option ingredient = {ingredient}/>)}
             </select>
         </form>
-        <div>
-            <img src = {newSandwich.Image.Breads} />
-            <img src = {newSandwich.Image.Meats}/>
-            <img src = {newSandwich.Image.Cheeses}/>
-            <img src = {newSandwich.Image.Sauces}/>
-            <img src = {newSandwich.Image.Toppings}/>
-            <img src = {newSandwich.Image.Veggies}/>
-            <img src = {newSandwich.Image.Gulps}/>
+        <div className='sandwich-visual-container'>
+            <img  alt="topping" src= {newSandwich.Image.Breads} />
+            <img  alt="topping" src= {newSandwich.Image.Meats}/>
+            <img  alt="topping" src= {newSandwich.Image.Cheeses}/>
+            <img  alt="topping" src= {newSandwich.Image.Sauces}/>
+            <img  alt="topping" src= {newSandwich.Image.Toppings}/>
+            <img  alt="topping" src= {newSandwich.Image.Veggies}/>
+            <img  alt="topping" src= {newSandwich.Image.Gulps}/>
         </div>
     </div>
   )
