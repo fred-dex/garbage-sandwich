@@ -117,7 +117,7 @@
     }
   ],
 
-  "ingredients": [
+  "ingredients": 
     {
       "Breads": [
         {
@@ -126,7 +126,7 @@
         },
         {
           "Name":"Martin's Potato Roll",
-          "image":"https://i.imgur.com/2L6WTEx.png"
+          "Image":"https://i.imgur.com/2L6WTEx.png"
         },
         {
           "Name":"Italian Hoagie",
@@ -321,5 +321,4 @@
         }
       ]
     }
-  ]
 }
