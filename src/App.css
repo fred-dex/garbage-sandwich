@@ -8,6 +8,7 @@ body {
 
 h1 {
   border-style: dotted;
+  border-width: medium;
 }
 
 h2 {
@@ -42,7 +43,7 @@ header {
   border-color: #F7591f;
   color: #F7591f;
   padding: 0%;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC';
 }
 
 header div {
@@ -118,4 +119,72 @@ footer {
 
 .dropdown-menu-active {
   opacity: .1;
+}
+
+
+.sandwichImage img {
+  display:inline-flex;
+  flex-direction: row;
+  height: 150px; 
+  width: 150px; 
+  max-width: 50%;
+  justify-content: space-evenly;
+  padding-bottom:20px;
+  padding-right: 3%;
+}
+
+.setSandwich {
+  font-family: 'Amatic SC';
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.addOrder {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  text-align: center;
+  padding: 25px 0 25px;
+}
+
+.MenuItem-container p {
+  font-family: 'Amatic SC';
+  font-size: 1.5rem;
+  font-weight:900;
+  margin: 0em;
+}
+
+.your-orders h1 {
+  font-family: 'Amatic SC';
+  font-size: 3rem;
+}
+
+.your-orders button {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0em;
+}
+
+.your-orders span {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.NewSandwich {
+  font-family: 'Amatic SC';
+  font-size: 1.5rem;
+ 
+}
+
+.remove button {
+  font-family: 'Amatic SC';
+  font-size: 1.5rem;
+  margin: 0em;
+}
+
+.order-history {
+  font-family: 'Amatic SC';
+  font-size: 1.5rem;
+  margin: 0em;
 }

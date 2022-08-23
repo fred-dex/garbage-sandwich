@@ -22,7 +22,7 @@ export default function NewSandwichForm() {
   return (
     <div>
         <h2>Build Your Own Sandwich</h2>
-        <form>
+        <form className="NewSandwich">
             <input type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
 
             <select name = 'Breads' onChange = {handleChange} value = {newSandwich.Breads}>
