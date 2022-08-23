@@ -26,7 +26,6 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <h2>Pile It On, Have Fun!</h2>
       <div className="Build Sandwich">
       <PresetContainer onAddToOrder = {onAddToOrder}/>
       {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}

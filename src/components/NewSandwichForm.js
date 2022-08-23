@@ -21,7 +21,7 @@ export default function NewSandwichForm() {
     }
   return (
     <div>
-        <h2>Build Your Own Sandwich</h2>
+        <h2>Build Your Own Sandwich---Pile it On, Get Trashy!</h2>
         <form className="NewSandwich">
             <input type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
 
@@ -31,7 +31,7 @@ export default function NewSandwichForm() {
             </select>
 
             <select name = 'Meats' onChange = {handleChange} value = {newSandwich.Meats}>
-                <option>Choose a Meat</option>
+                <option><p>Choose a Meat</p></option>
                 {ingredients.map(ingredient=>ingredient.Meats?<Option ingredient = {ingredient.Meats}/>:null)}
             </select>
 
