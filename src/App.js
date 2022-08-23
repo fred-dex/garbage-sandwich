@@ -21,6 +21,7 @@ function App() {
     setOrderHistory([...orderHistory, ...newOrders])
     setCurrentOrders([])
   }
+  
   return (
     <div className="App">
       <Header/>
@@ -28,9 +29,8 @@ function App() {
       <div className="Build Sandwich">
       <PresetContainer onAddToOrder = {onAddToOrder}/>
       {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
-      {/* <Menu /> */}
-      <OrderHistoryContainer orderHistory = {orderHistory} />
       </div>
+      <OrderHistoryContainer orderHistory = {orderHistory} />
       <Footer/>
     </div>
   );
