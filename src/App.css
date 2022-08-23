@@ -8,15 +8,20 @@ body {
 
 h1 {
   border-style: dotted;
-  border-width: medium;
+  border-width: thick;
 }
 
 h2 {
   font-family: 'Amatic SC', cursive;
   font-size: 3rem;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   border-style: dotted;
-  margin: center
-
+  border-width:medium;
+  width: 40%;
+  padding: .75rem;
 }
 
 .images img {
@@ -142,8 +147,10 @@ footer {
 .addOrder {
   font-family: 'Amatic SC';
   font-size: 2rem;
+  color: #F7591f;
   text-align: center;
   padding: 25px 0 25px;
+
 }
 
 .MenuItem-container p {
@@ -156,6 +163,13 @@ footer {
 .your-orders h1 {
   font-family: 'Amatic SC';
   font-size: 3rem;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-style: dotted;
+  border-width:medium;
+  width: 40%;
 }
 
 .your-orders button {
@@ -171,8 +185,8 @@ footer {
   font-weight: bold;
 }
 
-.NewSandwich {
-  font-family: 'Amatic SC';
+.NewSandwich option {
+  font-family: 'Amatic SC' !important;
   font-size: 1.5rem;
  
 }
