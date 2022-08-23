@@ -15,7 +15,7 @@ export default function menuItem({ sandwich, onAddToOrder }) {
       </span>
       {showSandwichInfo ? (
         <>
-          <p>{sandwich.Meats}</p>
+          <p>{sandwich.Meats} </p>
           <p>with {sandwich.Cheese}</p>
           <p>fresh {sandwich.Veggies}</p>
           <p>topped with {sandwich.Topping}</p>
@@ -31,6 +31,7 @@ export default function menuItem({ sandwich, onAddToOrder }) {
       <div className="sandwichImage">
         <img src={sandwich.Image.Bread} />
         <img src={sandwich.Image.Meats} />
+        <img src={sandwich.Image.Cheese} />
         <img src={sandwich.Image.Veggies} />
         <img src={sandwich.Image.Topping} />
         <img src={sandwich.Image.Sauce} />
