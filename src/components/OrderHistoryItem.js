@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function OrderItem({order}) {
+export default function OrderHistoryItem({order}) {
   return (
     <div>
         <span>{order.Name}</span>
-        <button>Remove from Order</button>
     </div>
   )
 }
