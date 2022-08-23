@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import PresetContainer from './components/PresetContainer'
 import CurrentOrderContainer from './components/CurrentOrderContainer';
 import OrderHistoryContainer from './components/OrderHistoryContainer';
+import NewSandwichForm from './components/NewSandwichForm';
 
 function App() {
   const [currentOrders, setCurrentOrders] = useState([])
@@ -21,7 +22,7 @@ function App() {
     setOrderHistory([...orderHistory, ...newOrders])
     setCurrentOrders([])
   }
-  
+
   return (
     <div className="App">
       <Header/>
@@ -31,6 +32,7 @@ function App() {
       {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
       </div>
       <OrderHistoryContainer orderHistory = {orderHistory} />
+      <NewSandwichForm />
       <Footer/>
     </div>
   );

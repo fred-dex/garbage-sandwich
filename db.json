@@ -117,7 +117,7 @@
     }
   ],
 
-  "buildSandwich": 
+  "ingredients": [
     {
       "Breads": [
         {
@@ -321,4 +321,5 @@
         }
       ]
     }
+  ]
 }
