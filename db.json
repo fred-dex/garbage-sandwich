@@ -116,6 +116,18 @@
       }
     }
   ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "imageIngredients":{
+    "Breads":{
+      "Toasted White Wonder Bread":"https://i.imgur.com/p7dUTL0.png"
+    }
+  },
+  "ingredients": 
+=======
+=======
+
+>>>>>>> 9bf9ac363152d8fa795a4c3d18a81e349e1988ec
 
   "imageIngredients": {
     "Breads": {
@@ -186,6 +198,10 @@
   },
 
   "ingredients": [
+<<<<<<< HEAD
+>>>>>>> f38b63ebab420e94e2f6e89ab12a4e4622dd8ba6
+=======
+>>>>>>> 9bf9ac363152d8fa795a4c3d18a81e349e1988ec
     {
       "Breads": [
         {
