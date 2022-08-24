@@ -63,22 +63,6 @@ function App() {
         </div>
         {/* <OrderHistoryContainer orderHistory = {orderHistory} /> */}
         <Footer/>
-      
-
-
-
-
-     
-
-      {/*
-      <div className="Build Sandwich">
-      <PresetContainer onAddToOrder = {onAddToOrder}/>
-      {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
-      </div>
-      <OrderHistoryContainer orderHistory = {orderHistory} />
-      <NewSandwichForm onAddToOrder = {onAddToOrder} />
-      <Footer/> */}
-
 
     </div>
     </Router>
