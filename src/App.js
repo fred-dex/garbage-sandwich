@@ -58,7 +58,7 @@ function App() {
       {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
       </div>
       <OrderHistoryContainer orderHistory = {orderHistory} />
-      <NewSandwichForm />
+      <NewSandwichForm onAddToOrder = {onAddToOrder} />
       <Footer/>
 
     </div>
