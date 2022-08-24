@@ -39,7 +39,7 @@ export default function NewSandwichForm() {
             
             <Select image = {"../images/5.png"} name = {'Cheeses'} handleChange={handleChange} ingredients = {ingredients.Cheeses}/>
 
-            
+ 
             <Select image = {"../images/8.png"} name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>
 
             

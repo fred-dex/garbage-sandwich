@@ -26,7 +26,7 @@ export default function menuItem({ sandwich, onAddToOrder }) {
       </div>
       {showSandwichInfo ? (
         <div className="sandwich-info">
-          <p>{sandwich.Meats} </p>
+          <p>{sandwich.Meats}</p>
           <p>with {sandwich.Cheese}</p>
           <p>fresh {sandwich.Veggies}</p>
           <p>topped with {sandwich.Topping}</p>

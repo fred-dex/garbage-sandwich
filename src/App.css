@@ -141,7 +141,7 @@ footer {
   padding-right: 3%;
 }
 
-.sandwich-info p {
+sandwich-info {
   font-family: "Josefin Sans";
 }
 
@@ -162,6 +162,7 @@ footer {
   width: 35%;
   padding: 10px 0 10px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .MenuItem-container p {
