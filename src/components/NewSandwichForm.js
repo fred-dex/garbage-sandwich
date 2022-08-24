@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
-<<<<<<< HEAD
+
 import {Link} from 'react-router-dom'
 import Option from "./Option"
 
-=======
+
 import "../styles/NewSandwich.css"
 import Select from './Select'
->>>>>>> a9b6a2f95ef6fd0ed88b80accb7a099e31038d07
+
 
 
 export default function NewSandwichForm({onAddToOrder}) {
@@ -60,7 +60,6 @@ export default function NewSandwichForm({onAddToOrder}) {
     
   return (
     <div>
-        <Link to="*">Home</Link>
         <h2>
         <Link to="/presetsandwichcontainer">
           Choose from One of Our Outrageously Delicious Sandwiches
