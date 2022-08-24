@@ -9,10 +9,12 @@ body {
 h1 {
   border-style: dotted;
   border-width: thick;
+  border-color: #F7591f;
+  color:black
 }
 
 h2 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC';
   font-size: 3rem;
   display: inline-block;
   position: relative;
@@ -47,6 +49,7 @@ header {
   border-width: 20px;
   border-color: #F7591f;
   color: #F7591f;
+  padding: 1%;
   padding: 0%;
   font-family: 'Amatic SC';
 }
@@ -77,7 +80,7 @@ header input[type=text] {
 }
 
 header h1 {
-  font-size: 4.0rem;
+  font-size: 3rem;
   margin-top: 10%;
   margin-bottom: 10%;
 }
@@ -92,7 +95,7 @@ footer {
   border-color: #F7591f;
   color: #F7591f;
   padding: 1%;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC';
   font-size: 2rem;
 }
 
@@ -138,6 +141,10 @@ footer {
   padding-right: 3%;
 }
 
+.sandwich-info p {
+  font-family: "Josefin Sans";
+}
+
 .setSandwich {
   font-family: 'Amatic SC';
   font-size: 3rem;
@@ -147,10 +154,14 @@ footer {
 .addOrder {
   font-family: 'Amatic SC';
   font-size: 2rem;
-  color: #F7591f;
+  font-weight: 700;
+  background-color: #e7e226;
   text-align: center;
-  padding: 25px 0 25px;
-
+  border-style: dotted;
+  border-width: medium;
+  width: 35%;
+  padding: 10px 0 10px;
+  margin-bottom: 50px;
 }
 
 .MenuItem-container p {
@@ -169,7 +180,7 @@ footer {
   align-items: center;
   border-style: dotted;
   border-width:medium;
-  width: 40%;
+  width: 50%;
 }
 
 .your-orders button {
