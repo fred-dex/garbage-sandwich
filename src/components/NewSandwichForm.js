@@ -45,7 +45,7 @@ export default function NewSandwichForm() {
             </select>
 
             <select value = {newSandwich.Veggies} name = 'Veggies' onChange = {handleChange}>
-                <option>Choose a veggie</option>
+                <option>Choose a Veggie</option>
                 {ingredients.Veggies.map(ingredient=><Option ingredient = {ingredient}/>)}
             </select>
 
