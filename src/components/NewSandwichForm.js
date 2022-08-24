@@ -1,14 +1,13 @@
 import React, {useState, useEffect} from 'react'
-import Option from "./Option"
 import "../styles/NewSandwich.css"
 import Select from './Select'
 
 export default function NewSandwichForm() {
-    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:{Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}}
+    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:{sandwichImage}}
     const [ingredients, setIngredients] = useState({Breads:{}, Meats:{}, Cheeses:{}, Veggies:{}, Toppings:{}, Sauces:{}, Gulps:{}})
     const [newSandwich, setNewSandwich] = useState(initialState)
     const [sandwichImage, setSandwichImage] = useState({Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""})
-    const [showDropdown, setShowDropdown] = useState(true)
+    
 
     function handleLoad(){
         fetch('http://localhost:4000/imageIngredients')
@@ -22,46 +21,45 @@ export default function NewSandwichForm() {
         setNewSandwich({...newSandwich, [name]:value})
         setSandwichImage({...sandwichImage, [name]: ingredients[name][value]})
         }
-    function handleShowDropdown(){
-        setShowDropdown(!showDropdown)
-    }
+    
   return (
     <div>
         <h2>Build Your Own Garbage Sandwich---Pile it On, Get Trashy!</h2>
         <form className="NewSandwich">
-            <input type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
-            {showDropdown?
-           <Select name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>:<img src="../images/3.png" alt="Bread" />}
+            <label for="sandwich-name">Name Your Sandwich!</label>
+            <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
+            
+           <Select image = {"../images/3.png"} name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>
 
 
-            {showDropdown?
-            <Select name = {'Meats'} handleChange={handleChange} ingredients = {ingredients.Meats}/>:<img src="../images/4.png" alt="Meats" />}
+            
+            <Select image = {"../images/4.png"} name = {'Meats'} handleChange={handleChange} ingredients = {ingredients.Meats}/>
 
 
-            {showDropdown?
-            <Select name = {'Cheeses'} handleChange={handleChange} ingredients = {ingredients.Cheeses}/>:<img src="../images/5.png" alt="Cheeses"/>}
+            
+            <Select image = {"../images/5.png"} name = {'Cheeses'} handleChange={handleChange} ingredients = {ingredients.Cheeses}/>
 
-            {showDropdown?
-            <Select name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>:<img src="../images/8.png" alt="Veggies"/>}
+            
+            <Select image = {"../images/8.png"} name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>
 
-            {showDropdown?
-            <Select name = {'Toppings'} handleChange={handleChange} ingredients = {ingredients.Toppings}/>:<img src="../images/6.png" alt="Toppings"/>}
+            
+            <Select image = {"../images/6.png"} name = {'Toppings'} handleChange={handleChange} ingredients = {ingredients.Toppings}/>
 
 
-            {showDropdown?
-            <Select name = {'Sauces'} handleChange={handleChange} ingredients = {ingredients.Sauces}/>:<img src="../images/7.png" alt="sauce"/>}
+            
+            <Select image = {"../images/7.png"} name = {'Sauces'} handleChange={handleChange} ingredients = {ingredients.Sauces}/>
 
-            {showDropdown?
-            <Select handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>:<img src="../images/9.png" alt="gulps"/>}
+            
+            <Select image = {"../images/9.png"} handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>
         </form>
         <div className='sandwich-visual-container'>
-            <img  alt="topping" src= {sandwichImage.Breads} />
-            <img  alt="topping" src= {sandwichImage.Meats}/>
-            <img  alt="topping" src= {sandwichImage.Cheeses}/>
-            <img  alt="topping" src= {sandwichImage.Sauces}/>
-            <img  alt="topping" src= {sandwichImage.Toppings}/>
-            <img  alt="topping" src= {sandwichImage.Veggies}/>
-            <img  alt="topping" src= {sandwichImage.Gulps}/>
+            <img src= {sandwichImage.Meats}/>
+            <img src= {sandwichImage.Breads} />
+            <img src= {sandwichImage.Cheeses}/>
+            <img src= {sandwichImage.Sauces}/>
+            <img src= {sandwichImage.Toppings}/>
+            <img src= {sandwichImage.Veggies}/>
+            <img src= {sandwichImage.Gulps}/>
         </div>
     </div>
   )
