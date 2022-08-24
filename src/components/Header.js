@@ -12,7 +12,7 @@ function Header() {
                 {/* <Link to="/newsandwichform"> New Sandwich Form</Link> */}
                 <Link to="/presetsandwichcontainer">Preset Sandwiches</Link> 
                 <Link to="/orderhistorycontainer"> Order History</Link>
-                <LogIn className="login" />
+                <LogIn  />
                 <Link className="about" to="/">About</Link>
                 <Link className="new-sandwich-form" to="/newsandwichform">New Sandwich Form</Link>
                 <h1>
