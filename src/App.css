@@ -219,3 +219,7 @@ a {
   color: black;
   text-decoration: none; /* no underline */
 }
+
+a:hover {
+  background-color: #f5b942;
+}
