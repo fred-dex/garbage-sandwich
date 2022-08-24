@@ -48,19 +48,8 @@ function App() {
         <Footer/>
       <Routes>
         <Route path="/" component={<PresetContainer/> } />
-        <Route path = "/newsandwichform" component={<NewSandwichForm />} />
+        <Route path = "/newsandwichform" component={<NewSandwichForm onAddToOrder={onAddToOrder}/>} />
       </Routes>
-
-
-      <Header/>
-      <div className="Build Sandwich">
-      <PresetContainer onAddToOrder = {onAddToOrder}/>
-      {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
-      </div>
-      <OrderHistoryContainer orderHistory = {orderHistory} />
-      <NewSandwichForm onAddToOrder = {onAddToOrder} />
-      <Footer/>
-
     </div>
 
   );
