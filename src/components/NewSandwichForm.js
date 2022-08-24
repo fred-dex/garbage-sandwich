@@ -23,7 +23,7 @@ export default function NewSandwichForm() {
     console.log(ingredients)
   return (
     <div>
-        <h2>Build Your Own Sandwich---Pile it On, Get Trashy!</h2>
+        <h2>Build Your Own Garbage Sandwich---Pile it On, Get Trashy!</h2>
         <form className="NewSandwich">
             <input type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
 
