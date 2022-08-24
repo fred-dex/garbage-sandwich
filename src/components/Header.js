@@ -10,18 +10,18 @@ function Header() {
                 <img src="./images/Garbage-Sandwich.png" alt="Garbage-Sandwich"/>
 
 
-                <LogIn />
+                {/* <LogIn /> */}
                 
                 <Link to="*">Home</Link>
                 {/* <Link to="/newsandwichform"> New Sandwich Form</Link> */}
                 
-                <Link to="/presetsandwichcontainer">Preset Sandwiches</Link> 
+                {/* <Link to="/presetsandwichcontainer">Preset Sandwiches</Link>  */}
                 <Link to="/orderhistorycontainer"> Order History</Link>
 
-                <LogIn className="login" />
+                {/* <LogIn className="login" /> */}
                 
-                <Link className="about" to="/">About</Link>
-                <Link className="new-sandwich-form" to="/newsandwichform">New Sandwich Form</Link>
+                <Link className="about" to="/about">About</Link>
+                {/* <Link className="new-sandwich-form" to="/newsandwichform">New Sandwich Form</Link> */}
                 
 
                 <h1>

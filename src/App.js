@@ -18,10 +18,7 @@ import OrderHistoryContainer from './components/OrderHistoryContainer';
 
 
 import NewSandwichForm from './components/NewSandwichForm'
-
-// import NewSandwichForm from './components/NewSandwichForm;
-
-// import NewSandwichForm from './components/NewSandwichForm';
+import About from './components/About'
 
 
 
@@ -50,9 +47,10 @@ function App() {
       <Header/>
       <Routes>
         <Route path="*" element={<PresetContainer onAddToOrder = {onAddToOrder}/> } />
-        <Route path = "/presetsandwichcontainer" element={<PresetContainer onAddToOrder = {onAddToOrder}/>} />
-        <Route path = "/newsandwichform" element={<NewSandwichForm />} /> 
+        {/* <Route path = "/presetsandwichcontainer" element={<PresetContainer onAddToOrder = {onAddToOrder}/>} /> */}
+        {/* <Route path = "/newsandwichform" element={<NewSandwichForm />} />  */}
         <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
+        <Route path = '/about' element={<About />} />
       </Routes>
      
 
