@@ -15,10 +15,14 @@ import PresetContainer from './components/PresetContainer'
 // import { PresetContainer } from './components/PresetContainer'
 import CurrentOrderContainer from './components/CurrentOrderContainer';
 import OrderHistoryContainer from './components/OrderHistoryContainer';
+<<<<<<< HEAD
 
 import NewSandwichForm from './components/NewSandwichForm'
 
 // import NewSandwichForm from './components/NewSandwichForm;
+=======
+import NewSandwichForm from './components/NewSandwichForm';
+>>>>>>> a9b6a2f95ef6fd0ed88b80accb7a099e31038d07
 
 
 function App() {
@@ -40,6 +44,12 @@ function App() {
 
 <Router>
     <div className="App">
+<<<<<<< HEAD
+=======
+
+     
+        <Header /> 
+>>>>>>> a9b6a2f95ef6fd0ed88b80accb7a099e31038d07
 
         <Header /> 
       <Routes>
@@ -60,8 +70,20 @@ function App() {
       
 
 
+<<<<<<< HEAD
 
      
+=======
+      <Header/>
+      <div className="Build Sandwich">
+      <PresetContainer onAddToOrder = {onAddToOrder}/>
+      {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
+      </div>
+      <OrderHistoryContainer orderHistory = {orderHistory} />
+      <NewSandwichForm />
+      <Footer/>
+
+>>>>>>> a9b6a2f95ef6fd0ed88b80accb7a099e31038d07
     </div>
     </Router>
   );
