@@ -3,7 +3,7 @@
     {
       "Name": "〰️    Oscar Pounder    〰️",
       "Bread": "Martin's Potato Roll",
-      "Meats": "Griddled Spicy Beef Shaving & BBQ Smoked Maple Pork Belly",
+      "Meats": "House Spiced Fried Minced Beef & BBQ Smoked Maple Pork Belly",
       "Cheese": "New York Cheddar",
       "Topping": "Curly Fries",
       "Sauce": "Garbage Secret Sauce",
@@ -23,7 +23,7 @@
     {
       "Name": "〰️   Great White Heap   〰️",
       "Bread": "Toasted White Wonder Bread",
-      "Meats": "Griddled Spicy Beef Shavings, Nathan's Hot Dog",
+      "Meats": "House Spiced Fried Minced Beef & Nathan's Hot Dog",
       "Cheese": "Murican Twofer",
       "Topping": "Smashed Doritos",
       "Sauce": "Garbage Secret Sauce",
@@ -44,7 +44,7 @@
     {
       "Name": "〰️   Pork Pie Pile Up   〰️",
       "Bread": "Italian Hoagie",
-      "Meats": "BBQ Smoked Maple Pork Belly , Nathan's Hot Dog",
+      "Meats": "BBQ Smoked Maple Pork Belly & Nathan's Hot Dog",
       "Cheese": "Pimento Cheeese",
       "Topping": "Tater Tots",
       "Sauce": "Nashville Hot Honey Mustard",
@@ -65,7 +65,7 @@
     {
       "Name": "〰️   The Junk Show   〰️",
       "Bread": "Cheesy Popover",
-      "Meats": "Griddled Spicy Beef Shaving & Chicken Nuggets",
+      "Meats": "House Spiced Fried Minced Beef & Chicken Nuggets",
       "Cheese": "Cheeze Whiz",
       "Topping": "Honey Bacon Baked Beans",
       "Sauce": "Garbage Secret Sauce",
@@ -135,7 +135,7 @@
     },
 
     "Meats": {
-      "Griddled Spicy Ground Beef": "https://i.imgur.com/41DnC1k.png",
+      "House Spiced Fried Minced Beef": "https://i.imgur.com/41DnC1k.png",
       "Nathan's Hot Dog": "https://i.imgur.com/HQXa3Jh.png",
       "Chicken Nuggets": "https://i.imgur.com/ZQsC4dq.png",
       "Italian Cold Cut Surprise": "https://i.imgur.com/KNXL4z8.png",
@@ -227,7 +227,7 @@
 
       "Meats": [
         {
-          "Name": "Griddled Spicy Ground Beef",
+          "Name": "House Spiced Fried Minced Beef",
           "Image": "https://i.imgur.com/tHEQeQD.png"
         },
         {
