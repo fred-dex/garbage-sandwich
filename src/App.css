@@ -135,6 +135,10 @@ footer {
   opacity: .1;
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> a9b6a2f95ef6fd0ed88b80accb7a099e31038d07
 
 .sandwichImage img {
   display:inline-flex;
@@ -222,6 +226,16 @@ footer {
   margin: 0em;
 }
 
+<<<<<<< HEAD
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+a:hover {
+  background-color: #f5b942;
+}
+=======
 .sandwich-visual-container {
   display:inline-flex;
   flex-direction: row;
@@ -241,3 +255,4 @@ footer {
   padding-bottom:50px;
   cursor: pointer;
 }
+>>>>>>> a9b6a2f95ef6fd0ed88b80accb7a099e31038d07

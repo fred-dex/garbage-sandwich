@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import MenuItem from './MenuItem'
+import {Link} from 'react-router-dom'
 
 export default function PresetContainer({onAddToOrder}) {
     const [sandwiches, setSandwiches] = useState([])
@@ -11,9 +12,14 @@ export default function PresetContainer({onAddToOrder}) {
     useEffect(onLoad, [])
   return (
     <div>
-      <h2>Choose from One of Our Outrageously Delicious Sandwiches</h2>
+       <h2>
+        <Link to="/presetsandwichcontainer">
+          Choose from One of Our Outrageously Delicious Sandwiches
+        </Link> 
+        <br />
+      <Link to="/newsandwichform">or Build your Own!</Link>
+        </h2>
         {sandwiches.map(sandwich=> <MenuItem sandwich = {sandwich} onAddToOrder = {onAddToOrder}/>)}
-      <h2>or Build your Own!</h2>
     </div>
   )
 }
