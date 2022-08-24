@@ -1,79 +1,65 @@
 import React, {useState, useEffect} from 'react'
-import Option from "./Option"
-
+import "../styles/NewSandwich.css"
+import Select from './Select'
 
 export default function NewSandwichForm() {
-    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:{Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}}
-    const [ingredients, setIngredients] = useState({Breads:[], Meats:[], Cheeses:[], Veggies:[], Toppings:[], Sauces:[], Gulps:[]})
+    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:{sandwichImage}}
+    const [ingredients, setIngredients] = useState({Breads:{}, Meats:{}, Cheeses:{}, Veggies:{}, Toppings:{}, Sauces:{}, Gulps:{}})
     const [newSandwich, setNewSandwich] = useState(initialState)
-    const [sandwichImage, setSandwichImage] = useState(newSandwich.Image)
+    const [sandwichImage, setSandwichImage] = useState({Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""})
+    
 
     function handleLoad(){
-        fetch('http://localhost:4000/ingredients')
+        fetch('http://localhost:4000/imageIngredients')
         .then(res=>res.json())
         .then(data=>setIngredients(data))
     }
     useEffect(handleLoad, [])
 
     function handleChange(e){
-        let {name, value, image} = e.target
+        let {name, value } = e.target
         setNewSandwich({...newSandwich, [name]:value})
-        setSandwichImage({...sandwichImage, [name]:image})
-    }
-    console.log(ingredients)
+        setSandwichImage({...sandwichImage, [name]: ingredients[name][value]})
+        }
+    
   return (
     <div>
         <h2>Build Your Own Garbage Sandwich---Pile it On, Get Trashy!</h2>
         <form className="NewSandwich">
-            <input type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
+            <label for="sandwich-name">Name Your Sandwich!</label>
+            <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
+            
+           <Select image = {"../images/3.png"} name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>
 
-            <select name = 'Breads' value = {newSandwich.Breads} onChange = {handleChange}>
-                
-                <option>Choose a Bread</option>
-                {ingredients.Breads.map(ingredient=><Option ingredient = {ingredient}/>)}
-            </select>
 
-            <select name = 'Meats' value = {newSandwich.Meats} onChange = {handleChange}>
+            
+            <Select image = {"../images/4.png"} name = {'Meats'} handleChange={handleChange} ingredients = {ingredients.Meats}/>
 
-                <option>Choose a Meat</option>
-                {ingredients.Meats.map(ingredient=><Option ingredient = {ingredient}/>)}
-            </select>
 
-            <select name = 'Cheeses' value = {newSandwich.Cheeses} onChange = {handleChange}>
-                <option>Choose a Cheese</option>
-                {ingredients.Cheeses.map(ingredient=><Option ingredient = {ingredient}/>)}
-            </select>
+            
+            <Select image = {"../images/5.png"} name = {'Cheeses'} handleChange={handleChange} ingredients = {ingredients.Cheeses}/>
 
-            <select value = {newSandwich.Veggies} name = 'Veggies' onChange = {handleChange}>
-                <option>Choose a Veggie</option>
-                {ingredients.Veggies.map(ingredient=><Option ingredient = {ingredient}/>)}
-            </select>
+ 
+            <Select image = {"../images/8.png"} name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>
 
-            <select value = {newSandwich.Toppings} name = 'Toppings' onChange = {handleChange}>
+            
+            <Select image = {"../images/6.png"} name = {'Toppings'} handleChange={handleChange} ingredients = {ingredients.Toppings}/>
 
-                <option>Choose a Topping</option>
-                {ingredients.Toppings.map(ingredient=><Option ingredient = {ingredient}/>)}
-            </select>
 
-            <select value = {newSandwich.Sauces} name = 'Sauces' onChange = {handleChange}>
-                
-                <option>Choose a Sauce</option>
-                {ingredients.Sauces.map(ingredient=><Option ingredient = {ingredient}/>)}
-            </select>
+            
+            <Select image = {"../images/7.png"} name = {'Sauces'} handleChange={handleChange} ingredients = {ingredients.Sauces}/>
 
-            <select value = {newSandwich.Gulps} name = 'Gulps' onChange = {handleChange}>
-                <option>Choose a Drink</option>
-                {ingredients.Gulps.map(ingredient=><Option ingredient = {ingredient}/>)}
-            </select>
+            
+            <Select image = {"../images/9.png"} handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>
         </form>
-        <div>
-            <img src = {newSandwich.Image.Breads} />
-            <img src = {newSandwich.Image.Meats}/>
-            <img src = {newSandwich.Image.Cheeses}/>
-            <img src = {newSandwich.Image.Sauces}/>
-            <img src = {newSandwich.Image.Toppings}/>
-            <img src = {newSandwich.Image.Veggies}/>
-            <img src = {newSandwich.Image.Gulps}/>
+        <div className='sandwich-visual-container'>
+            <img src= {sandwichImage.Meats}/>
+            <img src= {sandwichImage.Breads} />
+            <img src= {sandwichImage.Cheeses}/>
+            <img src= {sandwichImage.Sauces}/>
+            <img src= {sandwichImage.Toppings}/>
+            <img src= {sandwichImage.Veggies}/>
+            <img src= {sandwichImage.Gulps}/>
         </div>
     </div>
   )
