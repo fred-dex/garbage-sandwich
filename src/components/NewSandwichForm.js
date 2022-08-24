@@ -1,6 +1,13 @@
 import React, {useState, useEffect} from 'react'
+
+import {Link} from 'react-router-dom'
+import Option from "./Option"
+
+
 import "../styles/NewSandwich.css"
 import Select from './Select'
+
+
 
 export default function NewSandwichForm({onAddToOrder}) {
     
@@ -53,33 +60,31 @@ export default function NewSandwichForm({onAddToOrder}) {
     
   return (
     <div>
-        <h2>Build Your Own Garbage Sandwich---Pile it On, Get Trashy!</h2>
+        <h2>
+        <Link to="/presetsandwichcontainer">
+          Choose from One of Our Outrageously Delicious Sandwiches
+        </Link> 
+        <br />
+      <Link to="/newsandwichform">or Build your Own!</Link>
+        </h2>
         <form className="NewSandwich">
             <label for="sandwich-name">Name Your Sandwich!</label>
             <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleNameChange}/>
             
-           <Select image = {"../images/3.png"} name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>
+            <Select image = {"../images/3.png"} name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>
 
-
-            
             <Select image = {"../images/4.png"} name = {'Meats'} handleChange={handleChange} ingredients = {ingredients.Meats}/>
 
-
-            
             <Select image = {"../images/5.png"} name = {'Cheeses'} handleChange={handleChange} ingredients = {ingredients.Cheeses}/>
 
-            
-            <Select image = {"../images/8.png"} name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>
-
-            
             <Select image = {"../images/6.png"} name = {'Toppings'} handleChange={handleChange} ingredients = {ingredients.Toppings}/>
 
-
-            
             <Select image = {"../images/7.png"} name = {'Sauces'} handleChange={handleChange} ingredients = {ingredients.Sauces}/>
 
+            <Select image = {"../images/8.png"} name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>
             
             <Select image = {"../images/9.png"} handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>
+
         </form>
         <button onClick = {handlePlaceOrder} >Add Sandwich to Order</button>
         <button onClick = {handleSaveSandwich}>Save Sandwich</button>
