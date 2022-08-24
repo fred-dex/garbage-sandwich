@@ -2,11 +2,14 @@ import React, {useState, useEffect} from 'react'
 import "../styles/NewSandwich.css"
 import Select from './Select'
 
-export default function NewSandwichForm() {
-    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:{sandwichImage}}
+export default function NewSandwichForm({onAddToOrder}) {
+    
+    const initialImageState = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}
+    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:sandwichImage}
     const [ingredients, setIngredients] = useState({Breads:{}, Meats:{}, Cheeses:{}, Veggies:{}, Toppings:{}, Sauces:{}, Gulps:{}})
     const [newSandwich, setNewSandwich] = useState(initialState)
-    const [sandwichImage, setSandwichImage] = useState({Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""})
+    const [sandwichImage, setSandwichImage] = useState(initialImageState)
+    
     
 
     function handleLoad(){
@@ -16,18 +19,44 @@ export default function NewSandwichForm() {
     }
     useEffect(handleLoad, [])
 
+    function handleNameChange(e){
+        let {name, value } = e.target
+        setNewSandwich({...newSandwich, [name]:value})
+    }
     function handleChange(e){
         let {name, value } = e.target
         setNewSandwich({...newSandwich, [name]:value})
         setSandwichImage({...sandwichImage, [name]: ingredients[name][value]})
         }
+    function handlePlaceOrder(){
+        onAddToOrder(newSandwich)
+        setNewSandwich(initialState)
+        setSandwichImage(initialImageState)
+    }
+    function handleSaveSandwich(){
+        let sandwichForm={
+            ...newSandwich,
+            Image:{
+                ...sandwichImage
+            }
+        }
+        fetch("http://localhost:4000/sandwiches", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+                body: JSON.stringify(sandwichForm)
+        })
+        .then(res=>res.json())
+        .then(data=>console.log('success', data))
+    }
     
   return (
     <div>
         <h2>Build Your Own Garbage Sandwich---Pile it On, Get Trashy!</h2>
         <form className="NewSandwich">
             <label for="sandwich-name">Name Your Sandwich!</label>
-            <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
+            <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleNameChange}/>
             
            <Select image = {"../images/3.png"} name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>
 
@@ -52,6 +81,8 @@ export default function NewSandwichForm() {
             
             <Select image = {"../images/9.png"} handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>
         </form>
+        <button onClick = {handlePlaceOrder} >Add Sandwich to Order</button>
+        <button onClick = {handleSaveSandwich}>Save Sandwich</button>
         <div className='sandwich-visual-container'>
             <img src= {sandwichImage.Meats}/>
             <img src= {sandwichImage.Breads} />
