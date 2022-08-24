@@ -11,9 +11,9 @@ export default function PresetContainer({onAddToOrder}) {
     useEffect(onLoad, [])
   return (
     <div>
-      <p>Choose from one of our Delicious Sandwiches</p>
+      <h2>Choose from One of Our Outrageously Delicious Sandwiches</h2>
         {sandwiches.map(sandwich=> <MenuItem sandwich = {sandwich} onAddToOrder = {onAddToOrder}/>)}
-      <p>or Build your Own!</p>
+      <h2>or Build your Own!</h2>
     </div>
   )
 }

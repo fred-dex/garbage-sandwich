@@ -13,7 +13,10 @@ import PresetContainer from './components/PresetContainer'
 // import { PresetContainer } from './components/PresetContainer'
 import CurrentOrderContainer from './components/CurrentOrderContainer';
 import OrderHistoryContainer from './components/OrderHistoryContainer';
+
 import NewSandwichForm from './components/NewSandwichForm'
+import NewSandwichForm from './components/NewSandwichForm';
+
 
 function App() {
   const [currentOrders, setCurrentOrders] = useState([])
@@ -29,11 +32,12 @@ function App() {
     setOrderHistory([...orderHistory, ...newOrders])
     setCurrentOrders([])
   }
-  
+
   return (
 
 
     <div className="App">
+
      
         <Header /> 
 
@@ -48,6 +52,16 @@ function App() {
         <Route path="/" component={<PresetContainer/> } />
         <Route path = "/newsandwichform" component={<NewSandwichForm />} />
       </Routes>
+
+
+      <Header/>
+      <div className="Build Sandwich">
+      <PresetContainer onAddToOrder = {onAddToOrder}/>
+      {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
+      </div>
+      <OrderHistoryContainer orderHistory = {orderHistory} />
+      <NewSandwichForm />
+      <Footer/>
 
     </div>
 
