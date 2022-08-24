@@ -1,7 +1,7 @@
 {
   "sandwiches": [
     {
-      "Name": "Oscar Pounder",
+      "Name": "〰️    Oscar Pounder    〰️",
       "Bread": "Martin's Potato Roll",
       "Meats": "Griddled Spicy Beef Shaving & BBQ Smoked Maple Pork Belly",
       "Cheese": "New York Cheddar",
@@ -10,17 +10,18 @@
       "Veggies": "LTO",
       "Gulp": "Dank IPA Draft",
       "Image": {
-        "Bread": "https://i.imgur.com/dGIDff6.png",
-        "Meats": "https://i.imgur.com/q5Z2lvT.png",
-        "Cheese": "https://i.imgur.com/ijki3df.png",
-        "Topping": "https://i.imgur.com/iDjsZOJ.png",
-        "Sauce": "https://i.imgur.com/KUn9sRJ.png",
-        "Veggies": "https://i.imgur.com/Wj6Leh9.png",
-        "Gulp": "https://i.imgur.com/FTKGWSq.png"
+        "Bread": "https://i.imgur.com/8WuiNLV.png",
+        "Meats": "https://i.imgur.com/41DnC1k.png", 
+        "Meats": "https://i.imgur.com/XwHHwYA.png",
+        "Cheese": "https://i.imgur.com/hzSRYfy.png",
+        "Topping": "https://i.imgur.com/vPuZ6VI.png",
+        "Sauce": "https://i.imgur.com/aYOBQz8.png",
+        "Veggies": "https://i.imgur.com/YUxiEXb.png",
+        "Gulp": "https://i.imgur.com/7KE6e7K.png"
       }
     },
     {
-      "Name": "Great White Heap",
+      "Name": "〰️   Great White Heap   〰️",
       "Bread": "Toasted White Wonder Bread",
       "Meats": "Griddled Spicy Beef Shavings, Nathan's Hot Dog",
       "Cheese": "Murican Twofer",
@@ -30,37 +31,42 @@
       "Gulp": "PRB Pounder",
       "Image": {
         "Bread": "https://i.imgur.com/dGIDff6.png",
-        "Meats": "https://i.imgur.com/q5Z2lvT.png",
-        "Cheese": "https://i.imgur.com/ijki3df.png",
-        "Topping": "https://i.imgur.com/iDjsZOJ.png",
-        "Sauce": "https://i.imgur.com/KUn9sRJ.png",
-        "Veggies": "https://i.imgur.com/Wj6Leh9.png",
-        "Gulp": "https://i.imgur.com/FTKGWSq.png"
+        "Meats": "https://i.imgur.com/41DnC1k.png",
+        "Meats": "https://i.imgur.com/HQXa3Jh.png",
+        "Cheese": "https://i.imgur.com/xdDELho.png",
+        "Topping": "https://i.imgur.com/rjtmqwt.png",
+        "Sauce": "https://i.imgur.com/aYOBQz8.png",
+        "Veggies": "https://i.imgur.com/RmmMgF7.png",
+        "Gulp": "https://i.imgur.com/9zo92mh.png"
       }
     },
     
     {
-      "Name": "Pork Pie Pile Up",
+      "Name": "〰️   Pork Pie Pile Up   〰️",
       "Bread": "Italian Hoagie",
       "Meats": "BBQ Smoked Maple Pork Belly , Nathan's Hot Dog",
-      "Cheese": "Pimento",
-      "Topping": "Honey Bacon Baked Beans",
+      "Cheese": "Pimento Cheeese",
+      "Topping": "Tater Tots",
+
       "Sauce": "Nashville Hot Honey Mustard",
       "Veggies": "Pickle Power",
       "Gulp": "Double Shot of Old Crow",
       "Image": {
-        "Bread": "https://i.imgur.com/dGIDff6.png",
-        "Meats": "https://i.imgur.com/q5Z2lvT.png",
-        "Cheese": "https://i.imgur.com/ijki3df.png",
-        "Topping": "https://i.imgur.com/iDjsZOJ.png",
-        "Sauce": "https://i.imgur.com/KUn9sRJ.png",
-        "Veggies": "https://i.imgur.com/Wj6Leh9.png",
-        "Gulp": "https://i.imgur.com/FTKGWSq.png"
-      }
+        "Bread": "https://i.imgur.com/zDKBHLR.png",
+        "Meats": "https://i.imgur.com/XwHHwYA.png",
+        "Meats": "https://i.imgur.com/HQXa3Jh.png",
+        "Cheese": "https://i.imgur.com/flKwieT.png",
+        "Topping": "https://i.imgur.com/LN67Wsc.png",
+        "Sauce": "https://i.imgur.com/KNr3Ucn.png",
+        "Veggies": "https://i.imgur.com/xMGB2FU.png",
+        "Gulp": "https://i.imgur.com/MoqyXFQ.png"
+      } 
     },
+
     {
-      "Name": "The Junk Show",
-      "Bread": "Yorkshire Pudding",
+
+      "Name": "〰️   The Junk Show   〰️",
+      "Bread": "Cheesy Popover",
       "Meats": "Griddled Spicy Beef Shaving & Chicken Nuggets",
       "Cheese": "Cheeze Whiz",
       "Topping": "Honey Bacon Baked Beans",
@@ -68,51 +74,54 @@
       "Veggies": "Caremelized Mushrooms",
       "Gulp": "PRB Pounder",
       "Image": {
-        "Bread": "https://i.imgur.com/dGIDff6.png",
-        "Meats": "https://i.imgur.com/q5Z2lvT.png",
-        "Cheese": "https://i.imgur.com/ijki3df.png",
-        "Topping": "https://i.imgur.com/iDjsZOJ.png",
-        "Sauce": "https://i.imgur.com/KUn9sRJ.png",
-        "Veggies": "https://i.imgur.com/Wj6Leh9.png",
-        "Gulp": "https://i.imgur.com/FTKGWSq.png"
+        "Bread": "https://i.imgur.com/kRGc0nK.png",
+        "Meats": "https://i.imgur.com/41DnC1k.png",
+        "Meats": "https://i.imgur.com/ZQsC4dq.png",
+        "Cheese": "https://i.imgur.com/JrvMZII.png",
+        "Topping": "https://i.imgur.com/LN67Wsc.png",
+        "Sauce": "https://i.imgur.com/aYOBQz8.png",
+        "Veggies": "https://i.imgur.com/e22TWTx.png",
+        "Gulp": "https://i.imgur.com/9zo92mh.png"
       }
     },
+
     {
-      "Name": "The Large Marge",
+      "Name": "〰️   The Large Marge   〰️",
       "Bread": "Italian Hoagie",
       "Meats": "Italian Cold Cut Surprise",
       "Cheese": "Quatro Italiano",
       "Topping": "Macaroni Salad",
       "Sauce": "Two Thousand Island",
-      "Veggies": "Olive Tapenade",
+      "Veggies": "Olive Schmear",
       "Gulp": "Prosecco",
       "Image": {
         "Bread": "https://i.imgur.com/dGIDff6.png",
-        "Meats": "https://i.imgur.com/q5Z2lvT.png",
-        "Cheese": "https://i.imgur.com/ijki3df.png",
-        "Topping": "https://i.imgur.com/iDjsZOJ.png",
-        "Sauce": "https://i.imgur.com/KUn9sRJ.png",
-        "Veggies": "https://i.imgur.com/Wj6Leh9.png",
-        "Gulp": "https://i.imgur.com/FTKGWSq.png"
+        "Meats": "https://i.imgur.com/KNXL4z8.png",
+        "Cheese": "https://i.imgur.com/I3tP77T.png",
+        "Topping": "https://i.imgur.com/FSo2n9E.png",
+        "Sauce": "https://i.imgur.com/od99shu.png",
+        "Veggies": "https://i.imgur.com/iVVn3ab.png",
+        "Gulp": "https://i.imgur.com/7XcXj59.png"
       }
     },
+
     {
-      "Name": "Reduce, Reuse, Recycle",
+      "Name": "〰️   Reduce, Reuse, Recycle   〰️",
       "Bread": "French Baguette",
       "Meats": "Impossible Spicy Meat Sauce",
       "Cheese": "Herb Havarti",
-      "Topping": "Waffle Fries",
+      "Topping": "Onion Rings",
       "Sauce": "Classic - KMM",
       "Veggies": "LTO",
       "Gulp": "Diet Coke",
       "Image": {
-        "Bread": "https://i.imgur.com/dGIDff6.png",
-        "Meats": "https://i.imgur.com/q5Z2lvT.png",
-        "Cheese": "https://i.imgur.com/ijki3df.png",
-        "Topping": "https://i.imgur.com/iDjsZOJ.png",
-        "Sauce": "https://i.imgur.com/KUn9sRJ.png",
-        "Veggies": "https://i.imgur.com/Wj6Leh9.png",
-        "Gulp": "https://i.imgur.com/FTKGWSq.png"
+        "Bread": "https://i.imgur.com/DPvXJFW.png",
+        "Meats": "https://i.imgur.com/JJUEXmq.png",
+        "Cheese": "https://i.imgur.com/flKwieT.png",
+        "Topping": "https://i.imgur.com/W2jUjHb.png",
+        "Sauce": "https://i.imgur.com/EWzSBmv.png",
+        "Veggies": "https://i.imgur.com/YUxiEXb.png",
+        "Gulp": "https://i.imgur.com/VFpi6Ff.png"
       }
     }
   ],
@@ -139,12 +148,12 @@
     },
 
     "Cheeses": {
-      "Cheeze Whiz": "https://i.imgur.com/LeI1MZH.png",
-      "Murican Twofer": "https://i.imgur.com/Tmkwuo4.png",
-      "Pimento Cheese": "https://i.imgur.com/LTzZuT1.png",
-      "New York Cheddar": "https://i.imgur.com/q5Z2lvT.png",
-      "Herb Havarti": "https://i.imgur.com/ijki3df.png",
-      "Quatro Italiano": "https://i.imgur.com/TVFMCOP.png"
+      "Cheeze Whiz": "https://i.imgur.com/JrvMZII.png",
+      "Murican Twofer": "https://i.imgur.com/xdDELho.png",
+      "Pimento Cheese": "https://i.imgur.com/flKwieT.png",
+      "New York Cheddar": "https://i.imgur.com/hzSRYfy.png",
+      "Herb Havarti": "https://i.imgur.com/flKwieT.png",
+      "Quattro Italiano": "https://i.imgur.com/I3tP77T.png"
     },
 
     "Toppings": {
@@ -157,21 +166,21 @@
     },
 
     "Sauces": {
-      "Classic - KMM": "https://i.imgur.com/r9bjLf5.png",
-      "Sriracha Ketchup": "https://i.imgur.com/e0Y50WX.png",
-      "Chipotle Mayo": "https://i.imgur.com/9hdZioq.png",
-      "Nashville Hot Honey Mustard": "https://i.imgur.com/03WDy2o.png",
-      "Two Thousand Island": "https://i.imgur.com/LuPYZdB.png",
-      "Garbage Secret Sauce": "https://i.imgur.com/KUn9sRJ.png"
+      "Classic - KMM": "https://i.imgur.com/EWzSBmv.png",
+      "Sriracha Ketchup": "https://i.imgur.com/41DnC1k.png",
+      "Chipotle Mayo": "https://i.imgur.com/SfBbnCL.png",
+      "Nashville Hot Honey Mustard": "https://i.imgur.com/KNr3Ucn.png",
+      "Two Thousand Island": "https://i.imgur.com/od99shu.png",
+      "Garbage Secret Sauce": "https://i.imgur.com/aYOBQz8.png"
     },
 
     "Veggies": {
-      "LTO": "https://i.imgur.com/Wj6Leh9.png",
-      "Cole Slaw": "https://i.imgur.com/RH7Xc18.png",
-      "Olive Tapenade": "https://i.imgur.com/UslRaXO.png",
-      "Sweet and Sour Kimchi": "https://i.imgur.com/I1TYbIT.png",
-      "Pickle Power": "https://i.imgur.com/zbFO07D.png",
-      "Caremelized Mushrooms": "https://i.imgur.com/y7kjYtk.png"
+      "LTO": "https://i.imgur.com/YUxiEXb.png",
+      "Cole Slaw": "https://i.imgur.com/aYOBQz8.png",
+      "Olive Schmear": "https://i.imgur.com/iVVn3ab.png",
+      "Sweet and Sour Kimchi": "https://i.imgur.com/l35MWAS.png",
+      "Pickle Power": "https://i.imgur.com/xMGB2FU.png",
+      "Caremelized Mushrooms": "https://i.imgur.com/e22TWTx.png"
     },
 
     "Gulps": {
@@ -186,7 +195,7 @@
   },
 
   "ingredients":
-    {
+      {
       "Breads": [
         {
           "Name": "Toasted White Wonder Bread",
@@ -391,7 +400,7 @@
           "Name": "Double Shot of Old Crow",
           "Image": "https://i.imgur.com/V7A1g3h.png"
         }
-      ]
-    }
+    ]
+  }
 }
 

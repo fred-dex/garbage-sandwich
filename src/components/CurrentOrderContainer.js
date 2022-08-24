@@ -12,7 +12,7 @@ export default function CurrentOrderContainer({currentOrders, onPlaceOrder}) {
         <span>
         {currentOrders.map(order=><OrderItem order = {order}/>)}
         </span>
-        <button onClick = {handlePlaceOrder}>Place order</button>
+        <button onClick = {handlePlaceOrder}>Place Order</button>
     </div>
   )
 }

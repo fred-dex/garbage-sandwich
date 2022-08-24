@@ -1,12 +1,28 @@
 import React from "react"
+import LogIn from './LogIn'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return(
         <header>
             <div>
                 <img src="./images/Garbage-Sandwich.png" alt="Garbage-Sandwich"/>
-                <h1>Choose One of our Trashy Custom Sandwiches or Build Your Own Tasty Concoction</h1>
-                <h2>We Source our Ingredients from Local Farmers, and the Best Sustaibale Sources Available</h2>
+
+                <h1>Yummy! Build Your Garbage Sandwich</h1>
+                <LogIn />
+                
+                <Link to="/">Home</Link>
+                <Link to="/newsandwichform"> New Sandwich Form</Link>
+                
+
+                <h1>
+                    <p>Here at Garbage Sandwich we Celebrate the Dedadence and Deliciousness of a Great Sandwich.
+                    </p>
+                    <p>
+                    Our Mission is to Source the Best Ingredients from Local Farmers, and the Top Quality Sustaibale Sources of Meats, Fish, and Produce Available.
+                    </p>
+                    </h1>
+
             </div>
         </header>  
     );

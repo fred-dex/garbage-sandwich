@@ -27,14 +27,16 @@ export default function NewSandwichForm() {
     }
   return (
     <div>
-        <h2>Build Your Own Sandwich---Pile it On, Get Trashy!</h2>
+        <h2>Build Your Own Garbage Sandwich---Pile it On, Get Trashy!</h2>
         <form className="NewSandwich">
             <input type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
             {showDropdown?
            <Select name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>:<img src="../images/3.png" alt="Bread" />}
 
+
             {showDropdown?
             <Select name = {'Meats'} handleChange={handleChange} ingredients = {ingredients.Meats}/>:<img src="../images/4.png" alt="Meats" />}
+
 
             {showDropdown?
             <Select name = {'Cheeses'} handleChange={handleChange} ingredients = {ingredients.Cheeses}/>:<img src="../images/5.png" alt="Cheeses"/>}
@@ -45,9 +47,9 @@ export default function NewSandwichForm() {
             {showDropdown?
             <Select name = {'Toppings'} handleChange={handleChange} ingredients = {ingredients.Toppings}/>:<img src="../images/6.png" alt="Toppings"/>}
 
+
             {showDropdown?
             <Select name = {'Sauces'} handleChange={handleChange} ingredients = {ingredients.Sauces}/>:<img src="../images/7.png" alt="sauce"/>}
-
 
             {showDropdown?
             <Select handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>:<img src="../images/9.png" alt="gulps"/>}
