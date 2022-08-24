@@ -3,10 +3,10 @@ import "../styles/NewSandwich.css"
 import Select from './Select'
 
 export default function NewSandwichForm() {
-    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:{sandwichImage}}
+    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Toppings:"", Sauces:"", Veggies:"", Gulps:"", Image:{sandwichImage}}
     const [ingredients, setIngredients] = useState({Breads:{}, Meats:{}, Cheeses:{}, Veggies:{}, Toppings:{}, Sauces:{}, Gulps:{}})
     const [newSandwich, setNewSandwich] = useState(initialState)
-    const [sandwichImage, setSandwichImage] = useState({Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""})
+    const [sandwichImage, setSandwichImage] = useState({Breads:"", Meats:"", Cheeses:"", Toppings:"", Sauces:"", Veggies:"", Gulps:""})
     
 
     function handleLoad(){
@@ -29,28 +29,20 @@ export default function NewSandwichForm() {
             <label for="sandwich-name">Name Your Sandwich!</label>
             <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleChange}/>
             
-           <Select image = {"../images/3.png"} name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>
+            <Select image = {"../images/3.png"} name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>
 
-
-            
             <Select image = {"../images/4.png"} name = {'Meats'} handleChange={handleChange} ingredients = {ingredients.Meats}/>
 
-
-            
             <Select image = {"../images/5.png"} name = {'Cheeses'} handleChange={handleChange} ingredients = {ingredients.Cheeses}/>
 
- 
-            <Select image = {"../images/8.png"} name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>
-
-            
             <Select image = {"../images/6.png"} name = {'Toppings'} handleChange={handleChange} ingredients = {ingredients.Toppings}/>
 
-
-            
             <Select image = {"../images/7.png"} name = {'Sauces'} handleChange={handleChange} ingredients = {ingredients.Sauces}/>
 
+            <Select image = {"../images/8.png"} name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>
             
             <Select image = {"../images/9.png"} handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>
+
         </form>
         <div className='sandwich-visual-container'>
             <img src= {sandwichImage.Meats}/>

@@ -85,6 +85,12 @@ header h1 {
   margin-bottom: 10%;
 }
 
+.login {
+  font-size: 3rem;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 footer {
   display:flex;
   flex-direction: column;
@@ -141,8 +147,9 @@ footer {
   padding-right: 3%;
 }
 
-sandwich-info {
-  font-family: "Josefin Sans";
+.sandwich-info {
+  font-family: "Josefin Sans", 300;
+  font-weight: 400;
 }
 
 .setSandwich {
@@ -166,7 +173,7 @@ sandwich-info {
 }
 
 .MenuItem-container p {
-  font-family: 'Amatic SC';
+  font-family: "Josefin Sans";
   font-size: 1.5rem;
   font-weight:900;
   margin: 0em;
@@ -215,3 +222,22 @@ sandwich-info {
   margin: 0em;
 }
 
+.sandwich-visual-container {
+  display:inline-flex;
+  flex-direction: row;
+  height: 125px; 
+  width: 125px; 
+  max-width: 50%;
+  justify-content: space-evenly;
+  padding-bottom:20px;
+  padding-right: 3%;
+}
+
+
+.select-sandwich {
+  max-width: 30%;
+  height: auto;
+  justify-content: space-evenly;
+  padding-bottom:50px;
+  cursor: pointer;
+}
