@@ -3,9 +3,10 @@ import OrderHistoryItem from './OrderHistoryItem'
 
 export default function OrderHistoryContainer({orderHistory}) {
   return (
-    <div>
-      <h2>Your Past Orders</h2>
+    <div class>
+      <h2>Your Past Orders</h2> <span className='order-history' >
         {orderHistory.map(order=><OrderHistoryItem order = {order}/>)}
+        </span>
     </div>
   )
 }
