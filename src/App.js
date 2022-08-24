@@ -34,14 +34,7 @@ function App() {
 
 
     <div className="App">
-         {/* <nav> 
-          <ul>
-            <li>
-          <Link to "/"> Home </Link>
-          </li>
-          </ul>
-          </nav>
-          */}
+     
         <Header /> 
 
         <h2>Pile It On, Have Fun!</  h2>
