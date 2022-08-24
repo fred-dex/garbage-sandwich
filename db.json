@@ -52,14 +52,13 @@
       "Gulp": "Double Shot of Old Crow",
       "Image": {
         "Bread": "https://i.imgur.com/n1w9zHL.png",
-        "Meats": "https://i.imgur.com/XwHHwYA.png",
         "Meats": "https://i.imgur.com/HQXa3Jh.png",
         "Cheese": "https://i.imgur.com/flKwieT.png",
         "Topping": "https://i.imgur.com/0bsJyWw.png",
         "Sauce": "https://i.imgur.com/KNr3Ucn.png",
         "Veggies": "https://i.imgur.com/IGn8vcw.png",
         "Gulp": "https://i.imgur.com/PC5VKhP.png"
-      } 
+      }
     },
     {
       "id": 4,
@@ -73,7 +72,6 @@
       "Gulp": "PRB Pounder",
       "Image": {
         "Bread": "https://i.imgur.com/RgSPBTe.png",
-        "Meats": "https://i.imgur.com/41DnC1k.png",
         "Meats": "https://i.imgur.com/ZQsC4dq.png",
         "Cheese": "https://i.imgur.com/JrvMZII.png",
         "Topping": "https://i.imgur.com/LN67Wsc.png",
@@ -141,7 +139,6 @@
       "Garlic Fried Shrimp": "https://i.imgur.com/StLQjlz.png",
       "*Impossible Spicy Meat Sauce*": "https://i.imgur.com/JJUEXmq.png",
       "Add Fried Egg + $2": "https://i.imgur.com/SFlnbgG.png"
-
     },
     "Cheeses": {
       "Cheeze Whiz": "https://i.imgur.com/JrvMZII.png",
@@ -186,5 +183,3 @@
     }
   }
 }
-
-
