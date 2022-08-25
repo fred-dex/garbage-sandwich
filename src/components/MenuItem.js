@@ -16,13 +16,13 @@ export default function menuItem({ sandwich, onAddToOrder }) {
       </span>
       </div>
       <div className="sandwichImage">
-        <img src={sandwich.Image.Bread} />
-        <img src={sandwich.Image.Meats} />
-        <img src={sandwich.Image.Cheese} />
-        <img src={sandwich.Image.Topping} />
-        <img src={sandwich.Image.Sauce} />
-        <img src={sandwich.Image.Veggies} />
-        <img src={sandwich.Image.Gulp} />
+        <img src={sandwich.Image.Bread} alt='bread' />
+        <img src={sandwich.Image.Meats} alt='meats' />
+        <img src={sandwich.Image.Cheese}alt='cheese' />
+        <img src={sandwich.Image.Topping} alt='topping' />
+        <img src={sandwich.Image.Sauce} alt='sauce' />
+        <img src={sandwich.Image.Veggies}alt='veggies' />
+        <img src={sandwich.Image.Gulp}alt='gulp' />
       </div>
       {showSandwichInfo ? (
         <div className="sandwich-info">

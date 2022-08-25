@@ -1,22 +1,16 @@
 import React, {useState} from 'react';
 import './App.css';
-import Menu from './components/Menu';
 import { 
   Link,
   Route,
   Routes,
 } from 'react-router-dom';
 import { BrowserRouter as Router} from 'react-router-dom';
-import {Switch} from 'react-router-dom'
-
 import Header from './components/Header';
 import Footer from './components/Footer';
-import PresetContainer from './components/PresetContainer'
-// import { PresetContainer } from './components/PresetContainer'
 import CurrentOrderContainer from './components/CurrentOrderContainer';
 import OrderHistoryContainer from './components/OrderHistoryContainer';
-
-import NewSandwichForm from './components/NewSandwichForm'
+import About from './components/About'
 
 function App() {
   const [currentOrders, setCurrentOrders] = useState([])
@@ -34,21 +28,23 @@ function App() {
   }
 
   return (
-
 <Router>
     <div className="App">
       <Header/>
       <Routes>
-        <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
-        <Route path = '/about' element={<About />} />
+        <Route className='history' path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
+        <Route className='about' path = '/about' element={<About />} />
       </Routes>
+    </div>
 
-        <div className="Build Sandwich">
+    <div className="Build Sandwich">
         {/* <PresetContainer onAddToOrder = {onAddToOrder}/> */}
-        {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
-        </div>
+        {currentOrders.length!==0? <CurrentOrderContainer className='current-order' onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
+    </div>
         {/* <OrderHistoryContainer orderHistory = {orderHistory} /> */}
-        <Footer/>
-    </Router>
+        <Footer />
+     </Router>
   );
 }
+
+export default App

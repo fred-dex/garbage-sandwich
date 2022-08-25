@@ -27,10 +27,14 @@ h2 {
 }
 
 .images img {
+  display:inline-flex;
+  flex-direction: row;
+  height: 125px; 
+  width: 125px; 
   max-width: 50%;
-  height: auto;
   justify-content: space-evenly;
-  padding-bottom:50px;
+  padding-bottom:20px;
+  padding-right: 3%;
   cursor: pointer;
   color:black
 }
@@ -97,7 +101,7 @@ footer {
   align-items: center;
   background-color: #e7e226;
   border-style:ridge;
-  border-width: 20px;
+  border-width: 20x;
   border-color: #F7591f;
   color: #F7591f;
   padding: 1%;
@@ -109,14 +113,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#myVideo {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  object-fit: fill;
-  z-index: -1;
 }
 
 .dropdown {
@@ -241,11 +237,22 @@ a:hover {
   padding-right: 3%;
 }
 
-
 .select-sandwich {
   max-width: 30%;
   height: auto;
   justify-content: space-evenly;
   padding-bottom:50px;
   cursor: pointer;
+}
+
+.about {
+font-size: 1rem;
+}
+
+.history {
+font-size: 1rem;
+}
+
+.current-order {
+font-size: 1rem;
 }

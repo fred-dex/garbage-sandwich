@@ -8,7 +8,7 @@ export default function Select({ingredients, name, handleChange, image}) {
   }
   return (
     <div>
-      <img className="select-sandwich" src = {image} onClick = {handleClick}/>
+      <img className="select-sandwich" src = {image} alt='sandwich' onClick = {handleClick}/>
       {clicked?<select name = {name} onChange = {handleChange}>
         <option value = ''></option>
         {Object.keys(ingredients).map(ingredient=><Option ingredient = {ingredient}/>)}
