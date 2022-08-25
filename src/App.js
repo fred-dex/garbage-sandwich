@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Menu from './components/Menu';
 import { 
@@ -29,10 +29,15 @@ export default function App() {
     for (let i=0; i<orderArray.length; i++){
       newOrders.push(orderArray[i])
     }
-    setOrderHistory([...orderHistory, ...newOrders])
+    setOrderHistory([...orderHistory, newOrders])
     setCurrentOrders([])
   }
-
+  function handleLoad(){
+    fetch("http://localhost:4000/orderhistory")
+    .then(res=>res.json())
+    .then(data=>setOrderHistory(data))
+  }
+  useEffect(handleLoad, [])
   return (
 
 <Router>
