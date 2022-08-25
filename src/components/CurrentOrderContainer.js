@@ -12,6 +12,7 @@ export default function CurrentOrderContainer({currentOrders, onPlaceOrder}) {
         <span>
         {currentOrders.map(order=><OrderItem order = {order}/>)}
         </span>
+        <p>Total:${currentOrders.length*15}</p>
         <button onClick = {handlePlaceOrder}>Place Order</button>
     </div>
   )
