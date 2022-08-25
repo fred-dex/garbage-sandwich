@@ -8,6 +8,9 @@ function Header() {
         <header>
             <div>
                 <img src="./images/Garbage-Sandwich.png" alt="Garbage-Sandwich"/>
+                <Link to="*">Home</Link> 
+                <Link to="/about">About</Link>
+                <Link to="orderhistorycontainer">Order History</Link>
                 <h1>
                     <p>Here at Garbage Sandwich we Celebrate the Dedadence and Deliciousness of a Great Sandwich!
                     </p>
