@@ -12,7 +12,7 @@ import CurrentOrderContainer from './components/CurrentOrderContainer';
 import OrderHistoryContainer from './components/OrderHistoryContainer';
 import About from './components/About'
 
-function App() {
+export default function App() {
   const [currentOrders, setCurrentOrders] = useState([])
   const [orderHistory, setOrderHistory] = useState([])
   function onAddToOrder(sandwich){
@@ -32,8 +32,16 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
+
         <Route className='history' path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
         <Route className='about' path = '/about' element={<About />} />
+
+        <Route path="*" element={<PresetContainer onAddToOrder = {onAddToOrder}/> } />
+        <Route path = "/presetsandwichcontainer" element={<PresetContainer onAddToOrder = {onAddToOrder}/>} />
+        <Route path = "/newsandwichform" element={<NewSandwichForm onAddToOrder = {onAddToOrder}/>} /> 
+        <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
+        {/* <Route path = '/about' element={<About />} /> */}
+
       </Routes>
     </div>
 
@@ -42,8 +50,14 @@ function App() {
         {currentOrders.length!==0? <CurrentOrderContainer className='current-order' onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
     </div>
         {/* <OrderHistoryContainer orderHistory = {orderHistory} /> */}
+
         <Footer />
      </Router>
+
+        </div>
+        <Footer/>
+    </Router>
+]
   );
 }
 
