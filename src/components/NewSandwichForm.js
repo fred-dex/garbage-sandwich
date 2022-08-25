@@ -141,8 +141,6 @@ export default function NewSandwichForm({onAddToOrder}) {
             <Select image = {"../images/9.png"} handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>
 
         </form>
-        <button onClick = {handlePlaceOrder} >Add Sandwich to Order</button>
-        <button onClick = {handleSaveSandwich}>Save Sandwich</button>
         <div className='sandwich-visual-container'>
             <img src= {sandwichImage.Meats}/>
             <img src= {sandwichImage.Breads} />
@@ -151,6 +149,10 @@ export default function NewSandwichForm({onAddToOrder}) {
             <img src= {sandwichImage.Toppings}/>
             <img src= {sandwichImage.Veggies}/>
             <img src= {sandwichImage.Gulps}/>
+        </div>
+        <div>
+            <button onClick = {handlePlaceOrder} >Add Sandwich to Order</button>
+            <button onClick = {handleSaveSandwich}>Save Sandwich</button>
         </div>
     </div>
   )
