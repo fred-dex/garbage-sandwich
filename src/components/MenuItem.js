@@ -12,26 +12,26 @@ export default function menuItem({ sandwich, onAddToOrder }) {
     <div className="MenuItem-container">
       <div>
       <span className="setSandwich" onClick={handleClick}>
-        {sandwich.Name}
+        〰️{sandwich.Name}〰️
       </span>
       </div>
       <div className="sandwichImage">
-        <img src={sandwich.Image.Bread} />
+        <img src={sandwich.Image.Breads} />
         <img src={sandwich.Image.Meats} />
-        <img src={sandwich.Image.Cheese} />
-        <img src={sandwich.Image.Topping} />
-        <img src={sandwich.Image.Sauce} />
+        <img src={sandwich.Image.Cheeses} />
+        <img src={sandwich.Image.Toppings} />
+        <img src={sandwich.Image.Sauces} />
         <img src={sandwich.Image.Veggies} />
-        <img src={sandwich.Image.Gulp} />
+        <img src={sandwich.Image.Gulps} />
       </div>
       {showSandwichInfo ? (
         <div className="sandwich-info">
           <p>{sandwich.Meats}</p>
-          <p>with {sandwich.Cheese}</p>
+          <p>with {sandwich.Cheeses}</p>
           <p>fresh {sandwich.Veggies}</p>
-          <p>topped with {sandwich.Topping}</p>
-          <p>smothered in {sandwich.Sauce}</p>
-          <p>piled on a {sandwich.Bread}</p>
+          <p>topped with {sandwich.Toppings}</p>
+          <p>smothered in {sandwich.Sauces}</p>
+          <p>piled on a {sandwich.Breads}</p>
           <p>{sandwich.Price}</p>
         </div>
       ) : null}
