@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import Menu from './components/Menu';
+import About from './components/About';
 import { 
   Link,
   Route,
@@ -43,16 +43,13 @@ export default function App() {
         <Route path = "/presetsandwichcontainer" element={<PresetContainer onAddToOrder = {onAddToOrder}/>} />
         <Route path = "/newsandwichform" element={<NewSandwichForm onAddToOrder = {onAddToOrder}/>} /> 
         <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
-        {/* <Route path = '/about' element={<About />} /> */}
+        <Route path = "/about" element={<About about = {about} />} />
       </Routes>
-
         <div className="Build Sandwich">
-        {/* <PresetContainer onAddToOrder = {onAddToOrder}/> */}
         {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
         </div>
-        {/* <OrderHistoryContainer orderHistory = {orderHistory} /> */}
-        </div>
         <Footer/>
-    </Router>
-  );
+      </div>
+  </Router>
+  )
 }
