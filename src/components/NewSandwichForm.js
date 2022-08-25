@@ -9,12 +9,68 @@ import Select from './Select'
 
 export default function NewSandwichForm({onAddToOrder}) {
     
-    const initialImageState = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Price:"$15"}
-    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:sandwichImage}
+    const initialImageState = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}
+    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"",  Price:"$15", Image:sandwichImage}
     const [ingredients, setIngredients] = useState({Breads:{}, Meats:{}, Cheeses:{}, Veggies:{}, Toppings:{}, Sauces:{}, Gulps:{}})
     const [newSandwich, setNewSandwich] = useState(initialState)
     const [sandwichImage, setSandwichImage] = useState(initialImageState)
-    
+    let randomSandwichObject = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}
+    let randomSandwichImage = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}
+    function randomBread(breadObject){
+        let keys = Object.keys(breadObject)
+        let choice = keys[Math.floor(Math.random()*keys.length)]
+        randomSandwichObject = {...randomSandwichObject, Breads:choice}
+        randomSandwichImage = {...randomSandwichImage, Breads:ingredients.Breads[choice]}
+    }
+    function randomMeat(meatObject){
+        let keys = Object.keys(meatObject)
+        let choice = keys[Math.floor(Math.random()*keys.length)]
+        randomSandwichObject = {...randomSandwichObject, Meats:choice}
+        randomSandwichImage = {...randomSandwichImage, Meats:ingredients.Meats[choice]}
+    }
+    function randomCheese(cheeseObject){
+        let keys = Object.keys(cheeseObject)
+        let choice = keys[Math.floor(Math.random()*keys.length)]
+        randomSandwichObject = {...randomSandwichObject, Cheeses:choice}
+        randomSandwichImage = {...randomSandwichImage, Cheeses:ingredients.Cheeses[choice]}
+    }
+    function randomVeggie(veggieObject){
+        let keys = Object.keys(veggieObject)
+        let choice = keys[Math.floor(Math.random()*keys.length)]
+        randomSandwichObject = {...randomSandwichObject, Veggies:choice}
+        randomSandwichImage = {...randomSandwichImage, Veggies:ingredients.Veggies[choice]}
+    }
+    function randomSauce(sauceObject){
+        let keys = Object.keys(sauceObject)
+        let choice = keys[Math.floor(Math.random()*keys.length)]
+        randomSandwichObject = {...randomSandwichObject, Sauces:choice}
+        randomSandwichImage = {...randomSandwichImage, Sauces:ingredients.Sauces[choice]}
+    }
+    function randomTopping(toppingObject){
+        let keys = Object.keys(toppingObject)
+        let choice = keys[Math.floor(Math.random()*keys.length)]
+        randomSandwichObject = {...randomSandwichObject, Toppings:choice}
+        randomSandwichImage = {...randomSandwichImage, Toppings:ingredients.Toppings[choice]}
+    }
+    function randomGulp(gulpObject){
+        let keys = Object.keys(gulpObject)
+        let choice = keys[Math.floor(Math.random()*keys.length)]
+        randomSandwichObject = {...randomSandwichObject, Gulps:choice}
+        randomSandwichImage = {...randomSandwichImage, Gulps:ingredients.Gulps[choice]}
+    }
+    function randomSandwich(){
+        randomBread(ingredients.Breads)
+        randomMeat(ingredients.Meats)
+        randomCheese(ingredients.Cheeses)
+        randomSauce(ingredients.Sauces)
+        randomTopping(ingredients.Toppings)
+        randomVeggie(ingredients.Veggies)
+        randomGulp(ingredients.Gulps)
+        console.log(randomSandwichObject)
+        console.log(randomSandwichImage)
+        setNewSandwich(randomSandwichObject)
+        setSandwichImage(randomSandwichImage)
+    }
     
 
     function handleLoad(){
@@ -65,6 +121,7 @@ export default function NewSandwichForm({onAddToOrder}) {
         <br />
       <Link to="/newsandwichform">or Build your Own!</Link>
         </h2>
+        <button onClick = {randomSandwich}>Random Sandwich</button>
         <form className="NewSandwich">
             <label for="sandwich-name">Name Your Sandwich!</label>
             <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleNameChange}/>
