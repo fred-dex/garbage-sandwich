@@ -1,26 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import MenuListItems from './MenuListItems'
+import React, {useEffect, useState} from 'react'
+import MenuItem from './MenuItem'
+import {Link} from 'react-router-dom'
 
-function Menu() {
-
-    const [buildSandwich, setBuildSandwich] = useState([])
-
-    useEffect(() => {
-      console.log('running fetch')
-        fetch('http://localhost:4000/buildSandwich')
-        .then((r) => r.json())
-        .then((sandwich) => {
-          setBuildSandwich(sandwich)
-        })
-      }, [])
-console.log(buildSandwich)
-
-    return (
-      <div>
-        <MenuListItems buildSandwich={buildSandwich} />
-        {/* <Ingredients /> */}
-      </div>
-    )
+export default function PresetContainer({onAddToOrder}) {
+    const [sandwiches, setSandwiches] = useState([])
+    function onLoad(){
+        fetch ('http://localhost:4000/sandwiches')
+        .then (res=>res.json())
+        .then (data=>setSandwiches(data))
+    }
+    useEffect(onLoad, [])
+  return (
+    <div>
+       <h2>
+        <Link to="/presetsandwichcontainer">
+          Choose from One of Our Outrageously Delicious Sandwiches
+        </Link> 
+        <br />
+      <Link to="/newsandwichform">or Build your Own!</Link>
+        </h2>
+        {sandwiches.map(sandwich=> <MenuItem sandwich = {sandwich} onAddToOrder = {onAddToOrder}/>)}
+    </div>
+  )
 }
-
-export default Menu

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import Menu from './components/Menu';
 import { 
   Link,
   Route,
@@ -11,7 +10,7 @@ import {Switch} from 'react-router-dom'
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import PresetContainer from './components/PresetContainer'
+import Menu from './components/Menu'
 // import { PresetContainer } from './components/PresetContainer'
 import CurrentOrderContainer from './components/CurrentOrderContainer';
 import OrderHistoryContainer from './components/OrderHistoryContainer';
@@ -44,8 +43,8 @@ export default function App() {
     <div className="App">
       <Header/>
       <Routes>
-        <Route path="*" element={<PresetContainer onAddToOrder = {onAddToOrder}/> } />
-        <Route path = "/presetsandwichcontainer" element={<PresetContainer onAddToOrder = {onAddToOrder}/>} />
+        <Route path="*" element={<Menu onAddToOrder = {onAddToOrder}/> } />
+        <Route path = "/menu" element={<Menu onAddToOrder = {onAddToOrder}/>} />
         <Route path = "/newsandwichform" element={<NewSandwichForm onAddToOrder = {onAddToOrder}/>} /> 
         <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
         {/* <Route path = '/about' element={<About />} /> */}

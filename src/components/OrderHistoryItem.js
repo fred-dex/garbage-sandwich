@@ -5,7 +5,7 @@ export default function OrderHistoryItem({order}) {
     <div>
       <ol>
         {order.map(sandwich=><li>{sandwich.Name}--{sandwich.Price}</li>)}
-        <p>Total {order.length*15}</p>
+        <p>Total: ${order.length*15}</p>
       </ol>
     </div>
   )

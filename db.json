@@ -2,7 +2,7 @@
   "sandwiches": [
     {
       "id": 1,
-      "Name": "〰️    Oscar Pounder    〰️",
+      "Name": "Oscar Pounder",
       "Bread": "Martin's Potato Roll",
       "Meats": "House Spiced Fried Minced Beef & BBQ Smoked Maple Pork Belly",
       "Cheese": "New York Cheddar",
@@ -23,7 +23,7 @@
     },
     {
       "id": 2,
-      "Name": "〰️   Great White Heap   〰️",
+      "Name": "Great White Heap",
       "Bread": "Toasted White Wonder Bread",
       "Meats": "House Spiced Fried Minced Beef & Nathan's Hot Dog",
       "Cheese": "Murican Twofer",
@@ -44,7 +44,7 @@
     },
     {
       "id": 3,
-      "Name": "〰️   Pork Pie Pile Up   〰️",
+      "Name": "Pork Pie Pile Up",
       "Bread": "Italian Hoagie",
       "Meats": "BBQ Smoked Maple Pork Belly & Nathan's Hot Dog",
       "Cheese": "Pimento Cheeese",
@@ -65,7 +65,7 @@
     },
     {
       "id": 4,
-      "Name": "〰️   The Junk Show   〰️",
+      "Name": "The Junk Show",
       "Bread": "Cheesy Popover",
       "Meats": "House Spiced Fried Minced Beef & Chicken Nuggets",
       "Cheese": "Cheeze Whiz",
@@ -86,7 +86,7 @@
     },
     {
       "id": 5,
-      "Name": "〰️   The Large Marge   〰️",
+      "Name": "The Large Marge",
       "Bread": "Italian Hoagie",
       "Meats": "Italian Cold Cut Surprise",
       "Cheese": "Quatro Italiano",
@@ -107,7 +107,7 @@
     },
     {
       "id": 6,
-      "Name": "〰️   Reduce, Reuse, Recycle   〰️",
+      "Name": "Reduce, Reuse, Recycle",
       "Bread": "French Baguette",
       "Meats": "Impossible Spicy Meat Sauce",
       "Cheese": "Herb Havarti",
@@ -191,65 +191,44 @@
   "orderHistory": [
     [
       {
-        "id": 6,
-        "Name": "〰️   Reduce, Reuse, Recycle   〰️",
-        "Bread": "French Baguette",
-        "Meats": "Impossible Spicy Meat Sauce",
-        "Cheese": "Herb Havarti",
-        "Topping": "Onion Rings",
-        "Sauce": "Classic - KMM",
-        "Veggies": "LTO",
-        "Gulp": "Diet Coke",
-        "Price": "$15",
-        "Image": {
-          "Bread": "https://i.imgur.com/DtmBQyq.png",
-          "Meats": "https://i.imgur.com/JJUEXmq.png",
-          "Cheese": "https://i.imgur.com/flKwieT.png",
-          "Topping": "https://i.imgur.com/W2jUjHb.png",
-          "Sauce": "https://i.imgur.com/EWzSBmv.png",
-          "Veggies": "https://i.imgur.com/jbXYEYI.png",
-          "Gulp": "https://i.imgur.com/Wyq6BoX.png"
-        }
-      },
-      {
-        "id": 5,
-        "Name": "〰️   The Large Marge   〰️",
-        "Bread": "Italian Hoagie",
-        "Meats": "Italian Cold Cut Surprise",
-        "Cheese": "Quatro Italiano",
-        "Topping": "Macaroni Salad",
-        "Sauce": "Two Thousand Island",
-        "Veggies": "Olive Schmear",
-        "Gulp": "Prosecco",
-        "Price": "$15",
-        "Image": {
-          "Bread": "https://i.imgur.com/n1w9zHL.png",
-          "Meats": "https://i.imgur.com/KNXL4z8.png",
-          "Cheese": "https://i.imgur.com/I3tP77T.png",
-          "Topping": "https://i.imgur.com/rBGb9nm.png",
-          "Sauce": "https://i.imgur.com/od99shu.png",
-          "Veggies": "https://i.imgur.com/O9wS8v4.png",
-          "Gulp": "https://i.imgur.com/sUahiPN.png"
-        }
-      },
-      {
-        "id": 4,
-        "Name": "〰️   The Junk Show   〰️",
-        "Bread": "Cheesy Popover",
-        "Meats": "House Spiced Fried Minced Beef & Chicken Nuggets",
-        "Cheese": "Cheeze Whiz",
-        "Topping": "Honey Bacon Baked Beans",
+        "id": 1,
+        "Name": "Oscar Pounder",
+        "Bread": "Martin's Potato Roll",
+        "Meats": "House Spiced Fried Minced Beef & BBQ Smoked Maple Pork Belly",
+        "Cheese": "New York Cheddar",
+        "Topping": "Curly Fries",
         "Sauce": "Garbage Secret Sauce",
-        "Veggies": "Caremelized Mushrooms",
+        "Veggies": "LTO",
+        "Gulp": "Dank IPA Draft",
+        "Price": "$15",
+        "Image": {
+          "Bread": "https://i.imgur.com/pvzpnFG.png",
+          "Meats": "https://i.imgur.com/41DnC1k.png",
+          "Cheese": "https://i.imgur.com/hzSRYfy.png",
+          "Topping": "https://i.imgur.com/ryn6JE3.png",
+          "Sauce": "https://i.imgur.com/aYOBQz8.png",
+          "Veggies": "https://i.imgur.com/jbXYEYI.png",
+          "Gulp": "https://i.imgur.com/Ta89NYj.png"
+        }
+      },
+      {
+        "id": 2,
+        "Name": "Great White Heap",
+        "Bread": "Toasted White Wonder Bread",
+        "Meats": "House Spiced Fried Minced Beef & Nathan's Hot Dog",
+        "Cheese": "Murican Twofer",
+        "Topping": "Smashed Doritos",
+        "Sauce": "Garbage Secret Sauce",
+        "Veggies": "Cole Slaw",
         "Gulp": "PRB Pounder",
         "Price": "$15",
         "Image": {
-          "Bread": "https://i.imgur.com/RgSPBTe.png",
-          "Meats": "https://i.imgur.com/ZQsC4dq.png",
-          "Cheese": "https://i.imgur.com/JrvMZII.png",
-          "Topping": "https://i.imgur.com/LN67Wsc.png",
+          "Bread": "https://i.imgur.com/tBUzWXD.png",
+          "Meats": "https://i.imgur.com/41DnC1k.png",
+          "Cheese": "https://i.imgur.com/xdDELho.png",
+          "Topping": "https://i.imgur.com/rjtmqwt.png",
           "Sauce": "https://i.imgur.com/aYOBQz8.png",
-          "Veggies": "https://i.imgur.com/iXIsw5e.png",
+          "Veggies": "https://i.imgur.com/xO2OxGh.png",
           "Gulp": "https://i.imgur.com/T3BXQ0M.png"
         }
       }
