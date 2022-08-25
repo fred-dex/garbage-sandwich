@@ -68,7 +68,8 @@ export default function NewSandwichForm({onAddToOrder}) {
         <form className="NewSandwich">
             <label for="sandwich-name">Name Your Sandwich!</label>
             <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleNameChange}/>
-            
+
+        <div className="new-sandwich-image">
             <Select image = {"../images/3.png"} name = {'Breads'} handleChange={handleChange} ingredients = {ingredients.Breads}/>
 
             <Select image = {"../images/4.png"} name = {'Meats'} handleChange={handleChange} ingredients = {ingredients.Meats}/>
@@ -77,15 +78,18 @@ export default function NewSandwichForm({onAddToOrder}) {
 
             <Select image = {"../images/6.png"} name = {'Toppings'} handleChange={handleChange} ingredients = {ingredients.Toppings}/>
 
+            <div className="new-sandwich-image-2">
             <Select image = {"../images/7.png"} name = {'Sauces'} handleChange={handleChange} ingredients = {ingredients.Sauces}/>
 
             <Select image = {"../images/8.png"} name = {'Veggies'} handleChange={handleChange} ingredients = {ingredients.Veggies}/>
             
             <Select image = {"../images/9.png"} handleChange={handleChange} name = {'Gulps'} ingredients = {ingredients.Gulps}/>
-
+            </div>
+        </div>
         </form>
-        <button onClick = {handlePlaceOrder} >Add Sandwich to Order</button>
-        <button onClick = {handleSaveSandwich}>Save Sandwich</button>
+  
+        <button className='add-save-sandwich' onClick = {handlePlaceOrder} >Add Sandwich to Order</button>
+        <button className='add-save-sandwich' onClick = {handleSaveSandwich}>Save Sandwich</button>
         <div className='sandwich-visual-container'>
             <img src= {sandwichImage.Meats}/>
             <img src= {sandwichImage.Breads} />
