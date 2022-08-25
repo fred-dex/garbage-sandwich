@@ -51,7 +51,7 @@ function App() {
       <Routes>
         <Route path="*" element={<PresetContainer onAddToOrder = {onAddToOrder}/> } />
         <Route path = "/presetsandwichcontainer" element={<PresetContainer onAddToOrder = {onAddToOrder}/>} />
-        <Route path = "/newsandwichform" element={<NewSandwichForm />} /> 
+        <Route path = "/newsandwichform" element={<NewSandwichForm onAddToOrder = {onAddToOrder}/>} /> 
         <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
       </Routes>
      
