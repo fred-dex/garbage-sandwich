@@ -9,7 +9,7 @@ import Select from './Select'
 
 export default function NewSandwichForm({onAddToOrder}) {
     
-    const initialImageState = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}
+    const initialImageState = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Price:"$15"}
     const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Image:sandwichImage}
     const [ingredients, setIngredients] = useState({Breads:{}, Meats:{}, Cheeses:{}, Veggies:{}, Toppings:{}, Sauces:{}, Gulps:{}})
     const [newSandwich, setNewSandwich] = useState(initialState)
