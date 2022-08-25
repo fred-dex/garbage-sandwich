@@ -39,6 +39,9 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
+        <Route path="*" element={<PresetContainer onAddToOrder = {onAddToOrder}/> } />
+        <Route path = "/presetsandwichcontainer" element={<PresetContainer onAddToOrder = {onAddToOrder}/>} />
+        <Route path = "/newsandwichform" element={<NewSandwichForm onAddToOrder = {onAddToOrder}/>} /> 
         <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
         <Route path = '/about' element={<About />} />
       </Routes>
