@@ -21,6 +21,43 @@ h1 p {
 font-size: 2rem;
 }
 
+.founders {
+  font-family: 'Amatic SC';
+  font-size: 3rem;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-style: dotted;
+  border-width:medium;
+  width: 20%;
+  padding: .75rem;
+}
+
+.about {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.us {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-style: dotted;
+  border-width:medium;
+  width: 20%;
+  padding: .75rem; 
+}
+
 h2 {
   font-family: 'Amatic SC';
   font-size: 2rem;
@@ -30,7 +67,7 @@ h2 {
   align-items: center;
   border-style: dotted;
   border-width:medium;
-  width: 40%;
+  width: 10%;
   padding: .75rem;
 }
 
@@ -53,8 +90,6 @@ header {
   border-width: 20px;
   border-color: #F7591f;
   color: #F7591f;
-  padding: 1%;
-  padding: 0%;
   font-family: 'Amatic SC';
 }
 
@@ -62,7 +97,9 @@ header div {
   display:flex;
   justify-content: center;
   align-items: center;
-  gap:2%;
+  height: fit-content;
+  border:1px solid red;
+
 }
 
 header img {
@@ -201,6 +238,7 @@ footer {
   align-items: center;
   border-style: dotted;
   border-width:medium;
+  margin-top: -10%;
   width: 50%;
 }
 
@@ -222,18 +260,22 @@ footer {
   font-size: 1.5rem;
 }
 .new-sandwich-image {
-
   padding-bottom:20px;
-  padding-right: 1%;
-  margin-top: 2%;
-  margin-bottom: 2%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .new-sandwich-image-2 {
-
-  padding-bottom: 2%;
-  margin-top: 5%;
+  display: grid;
+  flex-direction: row;
+  max-width: 50%;
+  justify-content: space-evenly;
+  padding-bottom:20px;
+  padding-right: 3%;
   cursor: pointer;
 }
 
@@ -243,15 +285,22 @@ footer {
   font-family: 'Amatic SC';
   font-size: 2em;
   font-weight: bold;
-  margin: 10%;
+  margin: 3rem;
 }
 
 .remove button {
   font-family: 'Amatic SC';
   font-size: 1.5rem;
-  margin-top: 10%;
+  margin-top: 1%;
 }
 
+.sandwich-steps{
+  display: flex;
+  align-items: center;
+}
+.sandwich-steps img {
+  min-width: 150px;
+}
 .order-history {
   font-family: 'Amatic SC';
   font-size: 1.5rem;
@@ -279,6 +328,7 @@ a:hover {
 }
 
 .select-sandwich {
+  font-family: 'Amatic SC';
   max-width: 30%;
   height: auto;
   justify-content: space-evenly;
@@ -290,4 +340,12 @@ a:hover {
 font-size: 2.5rem;
 font-weight: 700;
 padding: 15px;
+}
+
+.total {
+font-family: 'Amatic SC';
+font-size: 2rem;
+font-weight: 700;
+margin-top: 10%;
+
 }

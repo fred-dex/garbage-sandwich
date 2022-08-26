@@ -43,7 +43,7 @@ export default function App() {
         <Route path = "/presetsandwichcontainer" element={<PresetContainer onAddToOrder = {onAddToOrder}/>} />
         <Route path = "/newsandwichform" element={<NewSandwichForm onAddToOrder = {onAddToOrder}/>} /> 
         <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
-        <Route path = "/about" element={<About about = {about} />} />
+        <Route path = "/about" element={<About />} />
       </Routes>
         <div className="Build Sandwich">
         {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}

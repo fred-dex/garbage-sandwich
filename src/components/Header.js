@@ -12,7 +12,7 @@ function Header() {
                 <Link className="nav-links" to="/about">About</Link>
                 <Link className="nav-links" to="orderhistorycontainer">Order History</Link>
                 <h1>
-                    <p>Here at Garbage Sandwich we Celebrate the Dedadence and Deliciousness of a Great Sandwich!
+                    <p>Here at Garbage Sandwich we Celebrate the Decadence and Deliciousness of a Great Sandwich!
                     </p>
                     <p>
                     Our Mission is to Source the Best Ingredients from Local Farmers, and the Top Quality Sustainable Sources of Meats, Fish, and Produce Available.

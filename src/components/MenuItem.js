@@ -32,6 +32,7 @@ export default function menuItem({ sandwich, onAddToOrder }) {
           <p>topped with {sandwich.Topping}</p>
           <p>smothered in {sandwich.Sauce}</p>
           <p>piled on a {sandwich.Bread}</p>
+          <p>paired with a tasty {sandwich.Gulp}</p>
           <p>{sandwich.Price}</p>
         </div>
       ) : null}

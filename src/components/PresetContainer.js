@@ -19,7 +19,7 @@ export default function PresetContainer({onAddToOrder}) {
         <br />
         <Link to="/newsandwichform">or Build your Own!</Link>
         </h2>
-        <h3>All Sandwiches with Gulper $15</h3>
+        <h3>All Sandwiches paired with a Tasty Gulper! $15</h3>
         {sandwiches.map(sandwich=> <MenuItem sandwich = {sandwich} onAddToOrder = {onAddToOrder}/>)}
     </div>
   )
