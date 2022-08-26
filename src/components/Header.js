@@ -1,5 +1,4 @@
 import React from "react"
-import LogIn from './LogIn'
 import { Link } from 'react-router-dom'
 // import {NewSandwichForm} from './NewSandwichForm'
 
