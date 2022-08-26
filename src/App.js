@@ -37,6 +37,13 @@ export default function App() {
     .then(data=>setOrderHistory(data))
   }
   useEffect(handleLoad, [])
+  
+  function onRemoveOrder(index){
+    let testingArr = [...currentOrders]
+    let newArr = testingArr.splice(index, 1)
+    
+    setCurrentOrders(testingArr)
+  }
   return (
 
 <Router>
@@ -52,7 +59,7 @@ export default function App() {
 
         <div className="Build Sandwich">
         {/* <PresetContainer onAddToOrder = {onAddToOrder}/> */}
-        {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
+        {currentOrders.length!==0? <CurrentOrderContainer onRemoveOrder={onRemoveOrder} onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
         </div>
         {/* <OrderHistoryContainer orderHistory = {orderHistory} /> */}
         </div>
