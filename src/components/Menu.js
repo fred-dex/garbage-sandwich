@@ -17,8 +17,12 @@ export default function PresetContainer({onAddToOrder}) {
         <Link to="/presetsandwichcontainer">
           Choose from One of Our Outrageously Delicious Sandwiches
         </Link> 
-        <br />
-      <Link to="/newsandwichform">or Build your Own!</Link>
+        <div className='or'>
+          <p>or</p>
+        </div>
+        <p>
+        <Link to="/newsandwichform">Build your Own!</Link>
+        </p>
         </h2>
         {sandwiches.map(sandwich=> <MenuItem sandwich = {sandwich} onAddToOrder = {onAddToOrder}/>)}
     </div>
