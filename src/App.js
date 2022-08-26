@@ -40,10 +40,10 @@ export default function App() {
   useEffect(handleLoad, [])
   
   function onRemoveOrder(index){
-    let testingArr = [...currentOrders]
-    let newArr = testingArr.splice(index, 1)
+    let currentCopy = [...currentOrders]
+    currentCopy.splice(index, 1)
     
-    setCurrentOrders(testingArr)
+    setCurrentOrders(currentCopy)
   }
   return (
 
@@ -58,7 +58,7 @@ export default function App() {
         <Route path = "/about" element={<About />} />
       </Routes>
         <div className="Build Sandwich">
-        {currentOrders.length!==0? <CurrentOrderContainer  onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
+        {currentOrders.length!==0? <CurrentOrderContainer onRemoveOrder={onRemoveOrder} onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
         </div>
         <Footer/>
       </div>

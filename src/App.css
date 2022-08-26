@@ -249,11 +249,6 @@ footer {
   margin: 0em;
 }
 
-.your-orders span {
-  font-family: 'Amatic SC';
-  font-size: 2rem;
-  font-weight: bold;
-}
 
 .NewSandwich {
   font-family: 'Amatic SC' !important;
@@ -267,6 +262,7 @@ footer {
   align-items: center;
   flex-direction: column;
   width: 100vw;
+  margin-top: 5%;
 }
 
 .new-sandwich-image-2 {
@@ -288,17 +284,33 @@ footer {
   margin: 3rem;
 }
 
+.sandwich-name {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  margin-bottom: 1%;
+}
+
 .remove {
   font-family: 'Amatic SC';
   font-size: 2rem;
-  margin-top: 1%;
+  border-style: dotted;
+  border-width: thick;
+  padding-left: 2%;
+  padding-right: 2%;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.remove:hover button {
+  background-color: #F7591f;
 }
 
 .remove2 button {
   font-family: 'Amatic SC';
   font-size: 1.5rem;
   font-weight :300;
-  margin-top: 1%;
+  margin-top: -2%;
 }
 
 .sandwich-steps{
@@ -353,4 +365,27 @@ padding: 15px;
 font-family: 'Amatic SC';
 font-size: 2rem;
 font-weight: 700;
+}
 
+.random button {
+font-family: 'Amatic SC';
+font-size: 4rem;
+font-weight: bolder;
+margin-bottom: 2%;
+}
+
+.random p {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -2%;
+  }
+
+.random:hover button {
+  background-color: #F7591f;
+}
+
+.or {
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
