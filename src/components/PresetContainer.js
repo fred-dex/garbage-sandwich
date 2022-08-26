@@ -3,7 +3,6 @@ import MenuItem from './MenuItem'
 import {Link} from 'react-router-dom'
 
 export default function PresetContainer({onAddToOrder}) {
-  //Fetches preset sandwiches from the database
     const [sandwiches, setSandwiches] = useState([])
     function onLoad(){
         fetch ('http://localhost:4000/sandwiches')
@@ -18,8 +17,9 @@ export default function PresetContainer({onAddToOrder}) {
           Choose from One of Our Outrageously Delicious Sandwiches
         </Link> 
         <br />
-      <Link to="/newsandwichform">or Build your Own!</Link>
+        <Link to="/newsandwichform">or Build your Own!</Link>
         </h2>
+        <h3>All Sandwiches paired with a Tasty Gulper! $15</h3>
         {sandwiches.map(sandwich=> <MenuItem sandwich = {sandwich} onAddToOrder = {onAddToOrder}/>)}
     </div>
   )
