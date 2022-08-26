@@ -67,7 +67,7 @@ h2 {
   align-items: center;
   border-style: dotted;
   border-width:medium;
-  width: 10%;
+  width: 20%;
   padding: .75rem;
 }
 
@@ -288,9 +288,16 @@ footer {
   margin: 3rem;
 }
 
-.remove button {
+.remove {
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  margin-top: 1%;
+}
+
+.remove2 button {
   font-family: 'Amatic SC';
   font-size: 1.5rem;
+  font-weight :300;
   margin-top: 1%;
 }
 
@@ -346,6 +353,5 @@ padding: 15px;
 font-family: 'Amatic SC';
 font-size: 2rem;
 font-weight: 700;
-margin-top: 10%;
-
+margin-top: 3%;
 }
