@@ -56,6 +56,7 @@ export default function NewSandwichForm({ onAddToOrder }) {
     Sauces: "",
     Gulps: "",
     Name: newSandwich.Name,
+    Price:'$15'
   };
   let randomSandwichImage = {
     Breads: "",
