@@ -54,7 +54,7 @@ font-size: 2rem;
   align-items: center;
   border-style: dotted;
   border-width:medium;
-  width: 20%;
+  width: auto;
   padding: .75rem; 
 }
 
@@ -67,7 +67,7 @@ h2 {
   align-items: center;
   border-style: dotted;
   border-width:medium;
-  width: 10%;
+  width: 20%;
   padding: .75rem;
 }
 
@@ -347,5 +347,9 @@ font-family: 'Amatic SC';
 font-size: 2rem;
 font-weight: 700;
 margin-top: 10%;
+}
 
+.or {
+  margin-top: -10%;
+  margin-bottom: -10%;
 }

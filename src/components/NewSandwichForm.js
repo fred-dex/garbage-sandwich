@@ -59,13 +59,17 @@ export default function NewSandwichForm({onAddToOrder}) {
   return (
     <>
         <div>
-            <h2>
-            <Link to="/presetsandwichcontainer">
-            Choose from One of Our Outrageously Delicious Sandwiches
-            </Link> 
-            <br />
-            <Link to="/newsandwichform">or Build your Own!</Link>
-            </h2>
+        <h2>
+        <Link to="/presetsandwichcontainer">
+          Choose from One of Our Outrageously Delicious Sandwiches
+        </Link> 
+        <div className='or'>
+          <p>or</p>
+        </div>
+        <p>
+        <Link to="/newsandwichform">Build your Own!</Link>
+        </p>
+        </h2>
             <form className="NewSandwich">
                 <label for="sandwich-name">Name Your Sandwich!</label>
                 <input id = 'sandwich-name' type = 'text' name = 'Name' value = {newSandwich.Name} onChange = {handleNameChange}/>

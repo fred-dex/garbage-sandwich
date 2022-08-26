@@ -125,50 +125,9 @@
         "Veggies": "https://i.imgur.com/jbXYEYI.png",
         "Gulp": "https://i.imgur.com/Wyq6BoX.png"
       }
-    },
-    {
-      "Name": "",
-      "Breads": "",
-      "Meats": "",
-      "Cheeses": "",
-      "Veggies": "",
-      "Toppings": "",
-      "Sauces": "",
-      "Gulps": "",
-      "Image": {
-        "Breads": "",
-        "Meats": "",
-        "Cheeses": "",
-        "Veggies": "",
-        "Toppings": "",
-        "Sauces": "",
-        "Gulps": "",
-        "Price": "$15"
-      },
-      "id": 7
-    },
-    {
-      "Name": "",
-      "Breads": "",
-      "Meats": "",
-      "Cheeses": "",
-      "Veggies": "",
-      "Toppings": "",
-      "Sauces": "",
-      "Gulps": "",
-      "Image": {
-        "Breads": "",
-        "Meats": "",
-        "Cheeses": "",
-        "Veggies": "",
-        "Toppings": "",
-        "Sauces": "",
-        "Gulps": "",
-        "Price": "$15"
-      },
-      "id": 8
     }
   ],
+  
   "imageIngredients": {
     "Breads": {
       "Toasted White Wonder Bread": "https://i.imgur.com/tBUzWXD.png",
