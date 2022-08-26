@@ -38,6 +38,13 @@ export default function App() {
     .then(data=>setOrderHistory(data))
   }
   useEffect(handleLoad, [])
+  
+  function onRemoveOrder(index){
+    let testingArr = [...currentOrders]
+    let newArr = testingArr.splice(index, 1)
+    
+    setCurrentOrders(testingArr)
+  }
   return (
 
 <Router>

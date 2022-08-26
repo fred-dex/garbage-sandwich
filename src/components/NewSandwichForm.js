@@ -9,12 +9,31 @@ import Select from './Select'
 export default function NewSandwichForm({onAddToOrder}) {
     
     const initialImageState = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}
-    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"",  Price:"$15", Image:sandwichImage}
+    const initialState = {Name:"", Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"",  Price:"$15", Image:{}}
     const [ingredients, setIngredients] = useState({Breads:{}, Meats:{}, Cheeses:{}, Veggies:{}, Toppings:{}, Sauces:{}, Gulps:{}})
     const [newSandwich, setNewSandwich] = useState(initialState)
     const [sandwichImage, setSandwichImage] = useState(initialImageState)
-    let randomSandwichObject = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}
+
+    //Fetch ingredient images
+    function handleLoad(){
+        fetch('http://localhost:4000/imageIngredients')
+        .then(res=>res.json())
+        .then(data=>setIngredients(data))
+    }
+    useEffect(handleLoad, [])
+    
+    //------------------------Random Sandwich Generator----------------------------------
+    let randomSandwichObject = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:"", Name:newSandwich.Name}
     let randomSandwichImage = {Breads:"", Meats:"", Cheeses:"", Veggies:"", Toppings:"", Sauces:"", Gulps:""}
+    
+    let randomAll = (type,objectType) => {
+        let keys = Object.keys(objectType)
+        let choice = keys[Math.floor(Math.random()*keys.length)]
+        randomSandwichObject = {...randomSandwichObject, [type]:choice}
+        randomSandwichImage = {...randomSandwichImage, [type]:ingredients[type][choice]}
+    }
+
+    
     function randomBread(breadObject){
         let keys = Object.keys(breadObject)
         let choice = keys[Math.floor(Math.random()*keys.length)]
@@ -72,13 +91,8 @@ export default function NewSandwichForm({onAddToOrder}) {
     }
     
 
-    function handleLoad(){
-        fetch('http://localhost:4000/imageIngredients')
-        .then(res=>res.json())
-        .then(data=>setIngredients(data))
-    }
-    useEffect(handleLoad, [])
-
+    
+    //Controls form inputs
     function handleNameChange(e){
         let {name, value } = e.target
         setNewSandwich({...newSandwich, [name]:value})
@@ -88,12 +102,22 @@ export default function NewSandwichForm({onAddToOrder}) {
         setNewSandwich({...newSandwich, [name]:value})
         setSandwichImage({...sandwichImage, [name]: ingredients[name][value]})
         }
-    function handlePlaceOrder(){
-        onAddToOrder(newSandwich)
+    
+    //sends new sandwich to the Current Order container
+        function handlePlaceOrder(){
+            if(newSandwich.Name!==''){let sandwichForm={
+                ...newSandwich,
+                Image:{
+                    ...sandwichImage
+                }} 
+        onAddToOrder(sandwichForm)
         setNewSandwich(initialState)
-        setSandwichImage(initialImageState)
+        setSandwichImage(initialImageState)}
+        else{alert('Give your sandwich a name before you order it!')}
     }
+    //Posts new sandwich to the database
     function handleSaveSandwich(){
+       if (newSandwich.Name!==''){
         let sandwichForm={
             ...newSandwich,
             Image:{
@@ -109,6 +133,8 @@ export default function NewSandwichForm({onAddToOrder}) {
         })
         .then(res=>res.json())
         .then(data=>console.log('success', data))
+        alert("Your sandwich has been saved! 😍🥪😍🥪")}
+        else{alert("Give your Sandwich a Name to save it!")}
     }
     
   return (
