@@ -238,7 +238,7 @@ footer {
   align-items: center;
   border-style: dotted;
   border-width:medium;
-  margin-top: -10%;
+  margin-top: 3%;
   width: 50%;
 }
 
@@ -247,6 +247,15 @@ footer {
   font-size: 2rem;
   font-weight: bold;
   margin: 0em;
+}
+
+.your-orders img {
+  display: grid;
+  flex-direction: row;
+  max-width: 50%;
+  justify-content: space-evenly;
+  padding-bottom:20px;
+  padding-right: 3%;
 }
 
 
