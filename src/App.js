@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import About from './components/About';
 import { 
   Link,
   Route,
@@ -55,13 +54,16 @@ export default function App() {
         <Route path = "/menu" element={<Menu onAddToOrder = {onAddToOrder}/>} />
         <Route path = "/newsandwichform" element={<NewSandwichForm onAddToOrder = {onAddToOrder}/>} /> 
         <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
-        <Route path = "/about" element={<About />} />
+        {/* <Route path = '/about' element={<About />} /> */}
       </Routes>
+
         <div className="Build Sandwich">
+        {/* <PresetContainer onAddToOrder = {onAddToOrder}/> */}
         {currentOrders.length!==0? <CurrentOrderContainer onRemoveOrder={onRemoveOrder} onPlaceOrder = {onPlaceOrder} currentOrders = {currentOrders}/>:null}
         </div>
+        {/* <OrderHistoryContainer orderHistory = {orderHistory} /> */}
+        </div>
         <Footer/>
-      </div>
-  </Router>
-  )
+    </Router>
+  );
 }
