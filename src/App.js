@@ -14,7 +14,7 @@ import Menu from './components/Menu'
 // import { PresetContainer } from './components/PresetContainer'
 import CurrentOrderContainer from './components/CurrentOrderContainer';
 import OrderHistoryContainer from './components/OrderHistoryContainer';
-
+import About from './components/About';
 import NewSandwichForm from './components/NewSandwichForm'
 
 export default function App() {
@@ -54,7 +54,7 @@ export default function App() {
         <Route path = "/menu" element={<Menu onAddToOrder = {onAddToOrder}/>} />
         <Route path = "/newsandwichform" element={<NewSandwichForm onAddToOrder = {onAddToOrder}/>} /> 
         <Route path = "/orderhistorycontainer" element={<OrderHistoryContainer orderHistory = {orderHistory} />} />
-        {/* <Route path = '/about' element={<About />} /> */}
+        <Route path = '/about' element={<About />} />
       </Routes>
 
         <div className="Build Sandwich">
